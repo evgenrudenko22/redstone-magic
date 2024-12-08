@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "redstone-magic:cursed_redstone"
+    },
+    "S": {
+      "item": "minecraft:gold_ingot"
+    },
+    "a": {
+      "item": "minecraft:obsidian"
+    }
+  },
+  "pattern": [
+    "###",
+    "SaS",
+    "###"
+  ],
+  "result": {
+    "item": "redstone-magic:transmutation_block"
+  }
+}

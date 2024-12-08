@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:iron_block_from_smelting_transmutation_block"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_transmutation_block": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "redstone-magic:transmutation_block"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_transmutation_block"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:iron_block_from_smelting_transmutation_block"
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "item.redstone-magic.cursed_redstone": "Cursed redstone",
+  "item.redstone-magic.soul_crasher": "Soul crasher",
+
+  "block.redstone-magic.transmutation_block": "Transmutation block",
+  "block.redstone-magic.pictogram_block": "Pictogram block",
+  "block.redstone-magic.soul_reconstructor": "Soul Reconstructor",
+
+  "itemGroup.redstone_magic": "Redstone Magic",
+
+  "tooltip.redstone-magic.soul_crasher": "Click on Redstone block and get Cursed Redstone",
+  "tooltip.redstone-magic.pictogram_block": "Click on Pictogram block with Cursed Redstone and get Diamond"
+
+}

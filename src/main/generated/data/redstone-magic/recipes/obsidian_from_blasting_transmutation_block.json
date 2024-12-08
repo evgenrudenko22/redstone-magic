@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "blocks",
+  "cookingtime": 200,
+  "experience": 0.7,
+  "group": "redstone-magic",
+  "ingredient": {
+    "item": "redstone-magic:transmutation_block"
+  },
+  "result": "minecraft:obsidian"
+}
