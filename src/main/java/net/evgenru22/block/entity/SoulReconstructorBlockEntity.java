@@ -2,6 +2,7 @@ package net.evgenru22.block.entity;
 
 import net.evgenru22.RedstoneMagic;
 import net.evgenru22.item.ModItems;
+import net.evgenru22.recipe.SoulReconstructorRecipe;
 import net.evgenru22.screen.SoulReconstructorScreenHandler;
 import net.fabricmc.fabric.api.screenhandler.v1.ExtendedScreenHandlerFactory;
 import net.minecraft.block.BlockState;
@@ -9,11 +10,13 @@ import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.inventory.Inventories;
+import net.minecraft.inventory.SimpleInventory;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.nbt.NbtCompound;
 import net.minecraft.network.PacketByteBuf;
+import net.minecraft.recipe.RecipeEntry;
 import net.minecraft.screen.PropertyDelegate;
 import net.minecraft.screen.ScreenHandler;
 import net.minecraft.server.network.ServerPlayerEntity;
@@ -22,6 +25,8 @@ import net.minecraft.util.collection.DefaultedList;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
+
+import java.util.Optional;
 
 public class SoulReconstructorBlockEntity extends BlockEntity implements ExtendedScreenHandlerFactory, ImplementedInventory {
     private final DefaultedList<ItemStack> inventory = DefaultedList.ofSize(4, ItemStack.EMPTY);
@@ -41,7 +46,7 @@ public class SoulReconstructorBlockEntity extends BlockEntity implements Extende
                 return switch (index) {
                     case 0 -> SoulReconstructorBlockEntity.this.progress;
                     case 1 -> SoulReconstructorBlockEntity.this.maxProgress;
-                    default -> 1;
+                    default -> 0;
                 };
             }
 
@@ -116,7 +121,7 @@ public class SoulReconstructorBlockEntity extends BlockEntity implements Extende
             markDirty(world, pos, state);
         }
 
-        RedstoneMagic.LOGGER.debug("Progress = {}", progress);
+        // RedstoneMagic.LOGGER.debug("Progress = {}", progress);
     }
 
     private void resetProgress() {
@@ -124,12 +129,14 @@ public class SoulReconstructorBlockEntity extends BlockEntity implements Extende
     }
 
     private void craftItem() {
+        Optional<RecipeEntry<SoulReconstructorRecipe>> recipe = getCurrentRecipe();
+
         for (int i = 0; i < INPUT_SLOTS.length; i++) {
             this.removeStack(INPUT_SLOTS[i], 1);
         }
 
-        ItemStack result = new ItemStack(Items.ENDER_EYE);
-        this.setStack(OUTPUT_SLOT, new ItemStack(result.getItem(), getStack(OUTPUT_SLOT).getCount() + result.getCount()));
+        this.setStack(OUTPUT_SLOT, new ItemStack(recipe.get().value().getResult(null).getItem(),
+                getStack(OUTPUT_SLOT).getCount() + recipe.get().value().getResult(null).getCount()));
     }
 
     private boolean hasCraftFinished() {
@@ -141,15 +148,19 @@ public class SoulReconstructorBlockEntity extends BlockEntity implements Extende
     }
 
     private boolean hasRecipe() {
-        ItemStack result = new ItemStack(Items.ENDER_EYE);
-        boolean hasInput = true;
-        for (int i = 0; i < INPUT_SLOTS.length; i++) {
-            if (!hasInput) {
-                return false;
-            }
-            hasInput = getStack(INPUT_SLOTS[i]).getItem() == ModItems.CURSED_REDSTONE;
+        Optional<RecipeEntry<SoulReconstructorRecipe>> recipe = getCurrentRecipe();
+
+        return recipe.isPresent() && canInsertAmountIntoOutputSlot(recipe.get().value().getResult(null))
+                && canInsertItemInOutputSlot(recipe.get().value().getResult(null).getItem());
+    }
+
+    private Optional<RecipeEntry<SoulReconstructorRecipe>> getCurrentRecipe() {
+        SimpleInventory inv = new SimpleInventory(this.size());
+        for (int i = 0; i < this.size(); i++) {
+            inv.setStack(i, this.getStack(i));
         }
-        return hasInput && canInsertAmountIntoOutputSlot(result) && canInsertItemInOutputSlot(result.getItem());
+
+        return getWorld().getRecipeManager().getFirstMatch(SoulReconstructorRecipe.Type.INSTANCE, inv, getWorld());
     }
 
     private boolean canInsertItemInOutputSlot(Item item) {

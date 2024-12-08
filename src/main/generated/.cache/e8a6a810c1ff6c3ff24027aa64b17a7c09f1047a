@@ -1,7 +1,8 @@
-// 1.20.4	2024-12-07T21:05:12.883052681	Redstone Magic/Model Definitions
+// 1.20.4	2024-12-08T16:22:32.263743674	Redstone Magic/Model Definitions
 d454d46e2c204bb4e86d6b739fe4df3ed1379cdf assets/redstone-magic/blockstates/soul_reconstructor.json
 6c9717778f2e04438b6c9cdfadeedbdd9074875f assets/redstone-magic/models/item/transmutation_block.json
 59ad1f43a3063b72c35f72ea936f40713a3b0506 assets/redstone-magic/models/item/soul_crasher.json
+7cb84a5417b8c4aab2fd69c7dd9c87bae4b3354d assets/redstone-magic/models/item/enlightenment_shard.json
 ecaad2aef1f2b6ba1c768325bf9a4f3940175dbe assets/redstone-magic/models/block/transmutation_block.json
 ac1e66d6ea42229c73f4ffc4c47e70111683e34c assets/redstone-magic/models/item/cursed_redstone.json
 959a6d1786bd3b16176f7881b0f25e0ca303a7a5 assets/redstone-magic/models/item/soul_reconstructor.json

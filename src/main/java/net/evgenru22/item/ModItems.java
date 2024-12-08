@@ -13,11 +13,13 @@ import net.minecraft.util.Identifier;
 
 public class ModItems {
     public static final Item CURSED_REDSTONE = registerItem("cursed_redstone", new Item(new FabricItemSettings()));
+    public static final Item ENLINGHTENMENT_SHARD = registerItem("enlightenment_shard", new Item(new FabricItemSettings()));
 
     public static final Item SOUL_CRASHER = registerItem("soul_crasher", new SoulCrasher(new FabricItemSettings().maxCount(1)));
 
     private static void addItemsToIngredientItemGroup(FabricItemGroupEntries entries) {
         entries.add(CURSED_REDSTONE);
+        entries.add(ENLINGHTENMENT_SHARD);
     }
 
     private static Item registerItem(String name, Item item) {

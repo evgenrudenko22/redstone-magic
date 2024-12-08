@@ -24,5 +24,6 @@ public class ModModelProvider extends FabricModelProvider {
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
         itemModelGenerator.register(ModItems.CURSED_REDSTONE, Models.GENERATED);
         itemModelGenerator.register(ModItems.SOUL_CRASHER, Models.GENERATED);
+        itemModelGenerator.register(ModItems.ENLINGHTENMENT_SHARD, Models.GENERATED);
     }
 }

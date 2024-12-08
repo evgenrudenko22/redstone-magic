@@ -1,1 +1,4 @@
-// 1.20.4	2024-12-07T21:05:12.883380221	Redstone Magic/Tags for minecraft:block
+// 1.20.4	2024-12-08T16:22:32.263979435	Redstone Magic/Tags for minecraft:block
+7e124b81daac19d6e24a1140fd30414dfde9c83b data/minecraft/tags/blocks/needs_stone_tool.json
+624effcad98cff6eaaa7642470ee83a1839efcb2 data/minecraft/tags/blocks/needs_iron_tool.json
+624effcad98cff6eaaa7642470ee83a1839efcb2 data/minecraft/tags/blocks/mineable/pickaxe.json

@@ -22,5 +22,6 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
     @Override
     public void generate() {
         addDrop(ModBlocks.TRANSMUTATION_BLOCK);
+        addDrop(ModBlocks.SOUL_RECONSTRUCTOR_BLOCK);
     }
 }

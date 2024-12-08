@@ -5,6 +5,7 @@ import net.evgenru22.block.entity.ModBlockEntities;
 import net.evgenru22.event.IconBlockMechanic;
 import net.evgenru22.item.ModItems;
 import net.evgenru22.item.ModItemsGroups;
+import net.evgenru22.recipe.ModRecipes;
 import net.evgenru22.screen.ModScreenHandlers;
 import net.fabricmc.api.ModInitializer;
 
@@ -31,6 +32,8 @@ public class RedstoneMagic implements ModInitializer {
 
 		ModBlockEntities.registerBlockEntities();
 		ModScreenHandlers.registerScreenHandlers();
+
+		ModRecipes.registerRecipes();
 
 		IconBlockMechanic.register();
 	}

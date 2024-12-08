@@ -1,7 +1,11 @@
-// 1.20.4	2024-12-07T21:05:12.882818646	Redstone Magic/Recipes
+// 1.20.4	2024-12-08T16:22:32.26350552	Redstone Magic/Recipes
 e939f6f56b5240f3a86dddc3f32c2076e7cad8c9 data/redstone-magic/recipes/obsidian_from_blasting_transmutation_block.json
+a34b660f219f5b5a0e702c5d0cc8f9cabf9f9c2d data/redstone-magic/advancements/recipes/tools/soul_crasher.json
 3c737f2026d682ea6e5706d220999e55164a4fdd data/redstone-magic/recipes/iron_block_from_smelting_transmutation_block.json
+fa9da650bcabc8320606c10b41317865f938814a data/redstone-magic/recipes/soul_reconstructor.json
+8e7612322b35dfee97fd043e995b7bf6da444be8 data/redstone-magic/advancements/recipes/tools/soul_reconstructor.json
 28fae3b13b7fbab8719f67974c220bdcb848222d data/redstone-magic/advancements/recipes/misc/iron_block_from_smelting_transmutation_block.json
 da9c7eb02b00b4f65436b7cacf5dd97d262b65a8 data/redstone-magic/advancements/recipes/misc/transmutation_block.json
 0d27278313edc828e5ccd69c981ccb758aa1b024 data/redstone-magic/advancements/recipes/misc/obsidian_from_blasting_transmutation_block.json
 8d9f601eda5a83933b5d361439fde6b09082f673 data/redstone-magic/recipes/transmutation_block.json
+3e19a9df4bf12a40575463f2b3cce7f3568e1e45 data/redstone-magic/recipes/soul_crasher.json

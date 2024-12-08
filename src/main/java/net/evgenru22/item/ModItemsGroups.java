@@ -16,6 +16,7 @@ public class ModItemsGroups {
             FabricItemGroup.builder().displayName(Text.translatable("itemGroup.redstone_magic"))
                     .icon(() -> new ItemStack(ModItems.CURSED_REDSTONE)).entries((displayContext, entries) -> {
                         entries.add(ModItems.CURSED_REDSTONE);
+                        entries.add(ModItems.ENLINGHTENMENT_SHARD);
                         entries.add(ModItems.SOUL_CRASHER);
 
                         entries.add(ModBlocks.TRANSMUTATION_BLOCK);
