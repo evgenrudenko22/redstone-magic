@@ -19,6 +19,14 @@ public class ModItemsGroups {
                         entries.add(ModItems.ENLINGHTENMENT_SHARD);
                         entries.add(ModItems.SOUL_CRASHER);
 
+                        entries.add(ModItems.PERENNIAL_TORTOISE_SPAWN_EGG);
+
+                        entries.add(ModItems.CURSED_PICKAXE);
+                        entries.add(ModItems.CURSED_AXE);
+                        entries.add(ModItems.CURSED_SHOVEL);
+                        entries.add(ModItems.CURSED_SWORD);
+                        entries.add(ModItems.CURSED_HOE);
+
                         entries.add(ModBlocks.TRANSMUTATION_BLOCK);
                         entries.add(ModBlocks.PICTOGRAM_BLOCK);
                         entries.add(ModBlocks.SOUL_RECONSTRUCTOR_BLOCK);

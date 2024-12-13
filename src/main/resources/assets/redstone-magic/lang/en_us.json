@@ -2,6 +2,12 @@
   "item.redstone-magic.cursed_redstone": "Cursed redstone",
   "item.redstone-magic.soul_crasher": "Soul crasher",
   "item.redstone-magic.enlightenment_shard": "Enlightenment Shard",
+  "item.redstone-magic.perennial_tortoise_spawn_egg": "Perennial Tortoise Spawn Egg",
+  "item.redstone-magic.cursed_pickaxe": "Cursed Pickaxe",
+  "item.redstone-magic.cursed_axe": "Cursed Axe",
+  "item.redstone-magic.cursed_shovel": "Cursed Shovel",
+  "item.redstone-magic.cursed_sword": "Cursed Sword",
+  "item.redstone-magic.cursed_hoe": "Cursed Hoe",
 
   "block.redstone-magic.transmutation_block": "Transmutation block",
   "block.redstone-magic.pictogram_block": "Pictogram block",
@@ -10,6 +16,8 @@
   "itemGroup.redstone_magic": "Redstone Magic",
 
   "tooltip.redstone-magic.soul_crasher": "Click on Redstone block and get Cursed Redstone",
-  "tooltip.redstone-magic.pictogram_block": "Click on Pictogram block with Cursed Redstone and get Diamond"
+  "tooltip.redstone-magic.pictogram_block": "Click on Pictogram block with Cursed Redstone and get Diamond",
+
+  "entity.redstone-magic.perennial_tortoise": "Perennial Tortoise"
 
 }

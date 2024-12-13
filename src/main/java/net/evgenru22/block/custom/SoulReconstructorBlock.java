@@ -21,7 +21,7 @@ import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
 
 public class SoulReconstructorBlock extends BlockWithEntity implements BlockEntityProvider {
-    protected static final VoxelShape SHAPE = Block.createCuboidShape(1, 0, 1, 15, 6, 15);
+    protected static final VoxelShape SHAPE = Block.createCuboidShape(1, 0, 1, 15, 11, 15);
 
     public SoulReconstructorBlock(Settings settings) {
         super(settings);

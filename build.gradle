@@ -36,6 +36,8 @@ dependencies {
 
 	modCompileOnly "me.shedaniel:RoughlyEnoughItems-api-fabric:14.0.699"
 	modRuntimeOnly "me.shedaniel:RoughlyEnoughItems-fabric:14.0.699"
+	modImplementation "dev.architectury:architectury-fabric:11.1.13"
+	modApi("me.shedaniel.cloth:basic-math:+")
 	
 }
 
