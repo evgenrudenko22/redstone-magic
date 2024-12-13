@@ -6,7 +6,6 @@ import net.minecraft.block.BlockState;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.Items;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.text.Text;
@@ -37,7 +36,7 @@ public class PictogramBlock extends Block {
             world.playSound(null, pos, SoundEvents.BLOCK_AMETHYST_BLOCK_CHIME, SoundCategory.BLOCKS, 1.0f, 1.0f);
 
             heldItem.decrement(1);
-            player.giveItemStack(new ItemStack(ModItems.ENLINGHTENMENT_SHARD));
+            player.giveItemStack(new ItemStack(ModItems.ENLIGHTENMENT_SHARD));
 
             return ActionResult.SUCCESS;
         } else {

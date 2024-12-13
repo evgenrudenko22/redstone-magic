@@ -1,4 +1,4 @@
-// 1.20.4	2024-12-13T16:10:59.559712228	Redstone Magic/Model Definitions
+// 1.20.4	2024-12-13T19:29:26.980283632	Redstone Magic/Model Definitions
 09921ed1d10f139e2c9f5b99d5f5ea2ad16a3f91 assets/redstone-magic/models/item/cursed_shovel.json
 f0fa2d1f1cfbfeaad9a88093cd1d992ab6524f37 assets/redstone-magic/models/item/cursed_axe.json
 e54d3fb495f56fbcd96d0f2b0951a6709bdb97fa assets/redstone-magic/models/item/cursed_hoe.json
@@ -12,4 +12,3 @@ d454d46e2c204bb4e86d6b739fe4df3ed1379cdf assets/redstone-magic/blockstates/soul_
 6c9717778f2e04438b6c9cdfadeedbdd9074875f assets/redstone-magic/models/item/transmutation_block.json
 e066b805829f8231003929d2a897a9a87548e83f assets/redstone-magic/models/item/cursed_sword.json
 63ec6c618a3a23eab4cab9c52d7d3250de9b516e assets/redstone-magic/models/item/perennial_tortoise_spawn_egg.json
-965ea41d3de9321682af853ac36e5476603f9409 assets/redstone-magic/models/item/cursed_pickaxe.json

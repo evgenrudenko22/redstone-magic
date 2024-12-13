@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "redstone-magic:transmutation_block"
+    },
+    "A": {
+      "item": "redstone-magic:cursed_redstone"
+    }
+  },
+  "pattern": [
+    " A ",
+    " # ",
+    " # "
+  ],
+  "result": {
+    "item": "redstone-magic:cursed_shovel"
+  }
+}

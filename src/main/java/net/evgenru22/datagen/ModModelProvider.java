@@ -28,12 +28,12 @@ public class ModModelProvider extends FabricModelProvider {
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
         itemModelGenerator.register(ModItems.CURSED_REDSTONE, Models.GENERATED);
         itemModelGenerator.register(ModItems.SOUL_CRASHER, Models.GENERATED);
-        itemModelGenerator.register(ModItems.ENLINGHTENMENT_SHARD, Models.GENERATED);
+        itemModelGenerator.register(ModItems.ENLIGHTENMENT_SHARD, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.PERENNIAL_TORTOISE_SPAWN_EGG,
                 new Model(Optional.of(new Identifier("item/template_spawn_egg")), Optional.empty()));
 
-        itemModelGenerator.register(ModItems.CURSED_PICKAXE, Models.HANDHELD);
+        // itemModelGenerator.register(ModItems.CURSED_PICKAXE, Models.HANDHELD);
 
         itemModelGenerator.register(ModItems.CURSED_AXE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.CURSED_SHOVEL, Models.HANDHELD);

@@ -16,7 +16,7 @@ public class ModItemsGroups {
             FabricItemGroup.builder().displayName(Text.translatable("itemGroup.redstone_magic"))
                     .icon(() -> new ItemStack(ModItems.CURSED_REDSTONE)).entries((displayContext, entries) -> {
                         entries.add(ModItems.CURSED_REDSTONE);
-                        entries.add(ModItems.ENLINGHTENMENT_SHARD);
+                        entries.add(ModItems.ENLIGHTENMENT_SHARD);
                         entries.add(ModItems.SOUL_CRASHER);
 
                         entries.add(ModItems.PERENNIAL_TORTOISE_SPAWN_EGG);

@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "redstone-magic:item/cursed_pickaxe"
+  },
+  "overrides": [
+    {
+      "predicate": { "custom_model_data": 1 },
+      "model": "redstone-magic:item/cursed_pickaxe_activate"
+    }
+  ]
+}
