@@ -18,6 +18,8 @@ public class ModItemsGroups {
                         entries.add(ModItems.CURSED_REDSTONE);
                         entries.add(ModItems.ENLIGHTENMENT_SHARD);
                         entries.add(ModItems.SOUL_CRASHER);
+                        entries.add(ModItems.GIFT_OF_ANCIENTS);
+                        entries.add(ModItems.MAGIC_TOKEN);
 
                         entries.add(ModItems.PERENNIAL_TORTOISE_SPAWN_EGG);
 
@@ -26,10 +28,12 @@ public class ModItemsGroups {
                         entries.add(ModItems.CURSED_SHOVEL);
                         entries.add(ModItems.CURSED_SWORD);
                         entries.add(ModItems.CURSED_HOE);
+                        entries.add(ModItems.CURSED_STAFF);
 
                         entries.add(ModBlocks.TRANSMUTATION_BLOCK);
                         entries.add(ModBlocks.PICTOGRAM_BLOCK);
                         entries.add(ModBlocks.SOUL_RECONSTRUCTOR_BLOCK);
+                        entries.add(ModBlocks.SPELL_ENCHANTER_BLOCK);
                     }).build());
 
     public static void registerItemGroups() {

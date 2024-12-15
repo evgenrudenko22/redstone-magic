@@ -1,6 +1,7 @@
 package net.evgenru22.entity.custom;
 
 import net.evgenru22.entity.ModEntities;
+import net.evgenru22.item.ModItems;
 import net.minecraft.entity.AnimationState;
 import net.minecraft.entity.EntityPose;
 import net.minecraft.entity.EntityType;
@@ -19,6 +20,8 @@ import net.minecraft.recipe.Ingredient;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
+import net.minecraft.util.ActionResult;
+import net.minecraft.util.Hand;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
 
@@ -26,6 +29,7 @@ public class PerennialTortoiseEntity extends AnimalEntity {
 
     public final AnimationState idleAnimationState = new AnimationState();
     private int idleAnimationTimeout = 0;
+    private boolean isSheared = false;
 
     public PerennialTortoiseEntity(EntityType<? extends AnimalEntity> entityType, World world) {
         super(entityType, world);
@@ -52,6 +56,9 @@ public class PerennialTortoiseEntity extends AnimalEntity {
         if (this.getWorld().isClient()) {
             setupAnimationState();
         }
+        if (this.isSheared && this.age % 1000 == 0) {
+            this.setSheared(false);
+        }
     }
 
     @Override
@@ -77,6 +84,25 @@ public class PerennialTortoiseEntity extends AnimalEntity {
     @Override
     public boolean isBreedingItem(ItemStack stack) {
         return stack.isOf(Items.GLOW_BERRIES);
+    }
+
+    @Override
+    public ActionResult interactMob(PlayerEntity player, Hand hand) {
+        ItemStack itemStack = player.getStackInHand(hand);
+
+        if (itemStack.isOf(Items.SHEARS)) {
+            if (!this.getWorld().isClient()) {
+                this.dropItem(ModItems.GIFT_OF_ANCIENTS);
+                itemStack.damage(1, player, p -> sendToolBreakStatus(hand));
+
+                this.setSheared(true);
+            }
+        }
+        return super.interactMob(player, hand);
+    }
+
+    public void setSheared(boolean sheared) {
+        isSheared = sheared;
     }
 
     @Override

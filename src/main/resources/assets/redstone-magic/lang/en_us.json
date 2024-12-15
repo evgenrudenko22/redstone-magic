@@ -8,10 +8,13 @@
   "item.redstone-magic.cursed_shovel": "Cursed Shovel",
   "item.redstone-magic.cursed_sword": "Cursed Sword",
   "item.redstone-magic.cursed_hoe": "Cursed Hoe",
+  "item.redstone-magic.cursed_staff": "Cursed Staff",
+  "item.redstone-magic.gift_of_ancients": "Gift of Ancients",
 
   "block.redstone-magic.transmutation_block": "Transmutation block",
   "block.redstone-magic.pictogram_block": "Pictogram block",
   "block.redstone-magic.soul_reconstructor": "Soul Reconstructor",
+  "block.redstone-magic.spell_enchanter": "Spell Enchanter",
 
   "itemGroup.redstone_magic": "Redstone Magic",
 

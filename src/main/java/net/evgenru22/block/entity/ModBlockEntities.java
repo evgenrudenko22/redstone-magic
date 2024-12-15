@@ -12,6 +12,10 @@ public class ModBlockEntities {
             Registry.register(Registries.BLOCK_ENTITY_TYPE, new Identifier(RedstoneMagic.MOD_ID, "soul_reconstructor_be"),
                     BlockEntityType.Builder.create(SoulReconstructorBlockEntity::new,
                             ModBlocks.SOUL_RECONSTRUCTOR_BLOCK).build());
+    public static final BlockEntityType<SpellEnchanterBlockEntity> SPELL_ENCHANTER_BLOCK_ENTITY_BLOCK_ENTITY =
+            Registry.register(Registries.BLOCK_ENTITY_TYPE, new Identifier(RedstoneMagic.MOD_ID, "spell_enchant_be"),
+                    BlockEntityType.Builder.create(SpellEnchanterBlockEntity::new,
+                            ModBlocks.SPELL_ENCHANTER_BLOCK).build());
 
     public static void registerBlockEntities() {
         RedstoneMagic.LOGGER.info("Registering Block Entities for" + RedstoneMagic.MOD_ID);

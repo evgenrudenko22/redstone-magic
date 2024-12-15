@@ -7,7 +7,7 @@ import net.minecraft.recipe.Ingredient;
 import java.util.function.Supplier;
 
 public enum ModToolMaterial implements ToolMaterial {
-    CURSED(3, 700, 4.5f, 4, 26, () -> Ingredient.ofItems(ModItems.CURSED_REDSTONE, ModBlocks.TRANSMUTATION_BLOCK)),
+    CURSED(3, 1684, 4.5f, 3.5f, 26, () -> Ingredient.ofItems(ModItems.CURSED_REDSTONE, ModBlocks.TRANSMUTATION_BLOCK)),
     ;
 
     private final int miningLevel;

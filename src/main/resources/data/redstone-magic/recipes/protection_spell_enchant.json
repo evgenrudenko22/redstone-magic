@@ -1,0 +1,9 @@
+{
+  "type": "redstone-magic:spell_enchanting",
+  "ingredients": [
+    {
+      "item": "redstone-magic:gift_of_ancients"
+    }
+  ],
+  "spell": "protection"
+}

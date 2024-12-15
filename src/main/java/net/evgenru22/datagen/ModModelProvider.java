@@ -29,6 +29,9 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.CURSED_REDSTONE, Models.GENERATED);
         itemModelGenerator.register(ModItems.SOUL_CRASHER, Models.GENERATED);
         itemModelGenerator.register(ModItems.ENLIGHTENMENT_SHARD, Models.GENERATED);
+        itemModelGenerator.register(ModItems.CURSED_STAFF, Models.GENERATED);
+        itemModelGenerator.register(ModItems.GIFT_OF_ANCIENTS, Models.GENERATED);
+        itemModelGenerator.register(ModItems.MAGIC_TOKEN, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.PERENNIAL_TORTOISE_SPAWN_EGG,
                 new Model(Optional.of(new Identifier("item/template_spawn_egg")), Optional.empty()));

@@ -11,5 +11,10 @@ public class ModRecipes {
                 SoulReconstructorRecipe.Serializer.INSTANCE);
         Registry.register(Registries.RECIPE_TYPE, new Identifier(RedstoneMagic.MOD_ID, SoulReconstructorRecipe.Type.ID),
                 SoulReconstructorRecipe.Type.INSTANCE);
+
+        Registry.register(Registries.RECIPE_SERIALIZER, new Identifier(RedstoneMagic.MOD_ID, SpellEnchanterRecipe.Serializer.ID),
+            SpellEnchanterRecipe.Serializer.INSTANCE);
+        Registry.register(Registries.RECIPE_TYPE, new Identifier(RedstoneMagic.MOD_ID, SpellEnchanterRecipe.Type.ID),
+            SpellEnchanterRecipe.Type.INSTANCE);
     }
 }

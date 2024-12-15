@@ -3,6 +3,7 @@ package net.evgenru22.block;
 import net.evgenru22.RedstoneMagic;
 import net.evgenru22.block.custom.PictogramBlock;
 import net.evgenru22.block.custom.SoulReconstructorBlock;
+import net.evgenru22.block.custom.SpellEnchanterBlock;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
@@ -21,6 +22,8 @@ public class ModBlocks {
 
     public static final Block SOUL_RECONSTRUCTOR_BLOCK = registerBlock("soul_reconstructor",
             new SoulReconstructorBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).nonOpaque()));
+    public static final Block SPELL_ENCHANTER_BLOCK = registerBlock("spell_enchanter",
+            new SpellEnchanterBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).nonOpaque()));
 
 
     private static Block registerBlock(String name, Block block) {
