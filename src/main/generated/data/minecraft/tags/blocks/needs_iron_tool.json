@@ -2,6 +2,7 @@
   "replace": false,
   "values": [
     "redstone-magic:transmutation_block",
-    "redstone-magic:soul_reconstructor"
+    "redstone-magic:soul_reconstructor",
+    "redstone-magic:ore_of_sins"
   ]
 }

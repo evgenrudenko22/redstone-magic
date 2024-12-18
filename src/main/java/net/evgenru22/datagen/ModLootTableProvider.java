@@ -5,13 +5,20 @@ import net.evgenru22.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
 import net.minecraft.block.Block;
+import net.minecraft.data.server.loottable.BlockLootTableGenerator;
+import net.minecraft.enchantment.Enchantments;
+import net.minecraft.item.Item;
 import net.minecraft.item.Items;
 import net.minecraft.loot.LootPool;
 import net.minecraft.loot.LootTable;
 import net.minecraft.loot.context.LootContextTypes;
 import net.minecraft.loot.entry.ItemEntry;
+import net.minecraft.loot.entry.LeafEntry;
+import net.minecraft.loot.entry.LootPoolEntry;
+import net.minecraft.loot.function.ApplyBonusLootFunction;
 import net.minecraft.loot.function.SetCountLootFunction;
 import net.minecraft.loot.provider.number.ConstantLootNumberProvider;
+import net.minecraft.loot.provider.number.UniformLootNumberProvider;
 import net.minecraft.util.Identifier;
 
 public class ModLootTableProvider extends FabricBlockLootTableProvider {
@@ -23,5 +30,18 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
     public void generate() {
         addDrop(ModBlocks.TRANSMUTATION_BLOCK);
         addDrop(ModBlocks.SOUL_RECONSTRUCTOR_BLOCK);
+        addDrop(ModBlocks.SPELL_ENCHANTER_BLOCK);
+
+        addDrop(ModBlocks.ORE_OF_SINGS, copperLikeOreDrops(ModBlocks.ORE_OF_SINGS, ModItems.SINS_SHARD));
+    }
+
+    public LootTable.Builder copperLikeOreDrops(Block drop, Item item) {
+        return BlockLootTableGenerator.dropsWithSilkTouch(drop,
+                this.applyExplosionDecay(drop,
+                        ((LeafEntry.Builder<?>) ItemEntry.builder(item)
+                                    .apply(SetCountLootFunction
+                                            .builder(UniformLootNumberProvider
+                                                    .create(2.0f, 5.0f))))
+                                .apply(ApplyBonusLootFunction.oreDrops(Enchantments.FORTUNE))));
     }
 }

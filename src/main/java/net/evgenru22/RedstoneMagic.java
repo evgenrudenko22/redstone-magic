@@ -5,12 +5,15 @@ import net.evgenru22.block.entity.ModBlockEntities;
 import net.evgenru22.entity.ModEntities;
 import net.evgenru22.entity.custom.PerennialTortoiseEntity;
 import net.evgenru22.event.IconBlockMechanic;
+import net.evgenru22.event.PlayerTickHandler;
 import net.evgenru22.item.ModItems;
 import net.evgenru22.item.ModItemsGroups;
 import net.evgenru22.recipe.ModRecipes;
 import net.evgenru22.screen.ModScreenHandlers;
+import net.evgenru22.world.gen.ModWorldGeneration;
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.fabric.api.event.lifecycle.v1.ServerTickEvents;
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -40,5 +43,9 @@ public class RedstoneMagic implements ModInitializer {
 
 		IconBlockMechanic.register();
 		FabricDefaultAttributeRegistry.register(ModEntities.PERENNIAL_TORTOISE, PerennialTortoiseEntity.createPerennialTortoiseAttributes());
+
+		ModWorldGeneration.generateModWorldGen();
+
+		ServerTickEvents.START_SERVER_TICK.register(new PlayerTickHandler());
 	}
 }

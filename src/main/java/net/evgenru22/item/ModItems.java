@@ -18,6 +18,7 @@ public class ModItems {
     public static final Item CURSED_REDSTONE = registerItem("cursed_redstone", new Item(new FabricItemSettings()));
     public static final Item ENLIGHTENMENT_SHARD = registerItem("enlightenment_shard", new Item(new FabricItemSettings()));
     public static final Item GIFT_OF_ANCIENTS = registerItem("gift_of_ancients", new Item(new FabricItemSettings()));
+    public static final Item SINS_SHARD = registerItem("sins_shard", new Item(new FabricItemSettings()));
 
     public static final Item SOUL_CRASHER = registerItem("soul_crasher", new SoulCrasher(new FabricItemSettings().maxCount(1)));
 

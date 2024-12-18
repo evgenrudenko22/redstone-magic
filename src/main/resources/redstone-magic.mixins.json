@@ -3,7 +3,8 @@
 	"package": "net.evgenru22.mixin",
 	"compatibilityLevel": "JAVA_17",
 	"mixins": [
-		"ExampleMixin"
+		"ExampleMixin",
+		"ModEntityDataSaverMixin"
 	],
 	"client": [
 		"ItemRendererAccessor",

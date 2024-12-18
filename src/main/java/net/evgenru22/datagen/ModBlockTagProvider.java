@@ -17,12 +17,16 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
     protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
                 .add(ModBlocks.TRANSMUTATION_BLOCK)
-                .add(ModBlocks.SOUL_RECONSTRUCTOR_BLOCK);
+                .add(ModBlocks.SOUL_RECONSTRUCTOR_BLOCK)
+                .add(ModBlocks.SPELL_ENCHANTER_BLOCK)
+                .add(ModBlocks.ORE_OF_SINGS);
         getOrCreateTagBuilder(BlockTags.NEEDS_STONE_TOOL)
-                .add(ModBlocks.SOUL_RECONSTRUCTOR_BLOCK);
+                .add(ModBlocks.SOUL_RECONSTRUCTOR_BLOCK)
+                .add(ModBlocks.SPELL_ENCHANTER_BLOCK);
         getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.TRANSMUTATION_BLOCK)
-                .add(ModBlocks.SOUL_RECONSTRUCTOR_BLOCK);
+                .add(ModBlocks.SOUL_RECONSTRUCTOR_BLOCK)
+                .add(ModBlocks.ORE_OF_SINGS);
 
     }
 }

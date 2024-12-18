@@ -25,6 +25,9 @@ public class ModBlocks {
     public static final Block SPELL_ENCHANTER_BLOCK = registerBlock("spell_enchanter",
             new SpellEnchanterBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).nonOpaque()));
 
+    public static final Block ORE_OF_SINGS = registerBlock("ore_of_sins",
+            new Block(FabricBlockSettings.copyOf(Blocks.IRON_ORE)));
+
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);

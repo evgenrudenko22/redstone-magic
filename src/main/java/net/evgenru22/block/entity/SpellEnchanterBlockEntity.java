@@ -16,6 +16,9 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NbtCompound;
 import net.minecraft.network.PacketByteBuf;
+import net.minecraft.network.listener.ClientPlayPacketListener;
+import net.minecraft.network.packet.Packet;
+import net.minecraft.network.packet.s2c.play.BlockEntityUpdateS2CPacket;
 import net.minecraft.recipe.RecipeEntry;
 import net.minecraft.screen.PropertyDelegate;
 import net.minecraft.screen.ScreenHandler;
@@ -63,6 +66,20 @@ public class SpellEnchanterBlockEntity extends BlockEntity implements ExtendedSc
                 return 2;
             }
         };
+    }
+
+    public ItemStack getRenderStack() {
+        if (this.getStack(OUTPUT_SLOT).isEmpty()) {
+            return this.getStack(INPUT_SLOT);
+        } else {
+            return this.getStack(OUTPUT_SLOT);
+        }
+    }
+
+    @Override
+    public void markDirty() {
+        world.updateListeners(pos, getCachedState(), getCachedState(), 3);
+        super.markDirty();
     }
 
     @Override
@@ -162,5 +179,13 @@ public class SpellEnchanterBlockEntity extends BlockEntity implements ExtendedSc
         return !(this.getStack(OUTPUT_SLOT).isEmpty()) && this.getStack(OUTPUT_SLOT).isOf(ModItems.MAGIC_TOKEN) && MagicTokenItem.getSpell(this.getStack(OUTPUT_SLOT)) == "";
     }
 
+    @Override
+    public @Nullable Packet<ClientPlayPacketListener> toUpdatePacket() {
+        return BlockEntityUpdateS2CPacket.create(this);
+    }
 
+    @Override
+    public NbtCompound toInitialChunkDataNbt() {
+        return createNbt();
+    }
 }

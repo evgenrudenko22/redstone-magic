@@ -3,6 +3,8 @@ package net.evgenru22.recipe;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.DataResult;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
+import net.evgenru22.item.ModItems;
+import net.evgenru22.item.custom.MagicTokenItem;
 import net.minecraft.inventory.SimpleInventory;
 import net.minecraft.item.ItemStack;
 import net.minecraft.network.PacketByteBuf;
@@ -41,7 +43,9 @@ public class SpellEnchanterRecipe implements Recipe<SimpleInventory> {
 
     @Override
     public ItemStack craft(SimpleInventory inventory, DynamicRegistryManager registryManager) {
-        return null;
+        ItemStack token = new ItemStack(ModItems.MAGIC_TOKEN);
+        MagicTokenItem.setSpell(token, getSpell());
+        return token;
     }
 
     @Override
@@ -51,7 +55,9 @@ public class SpellEnchanterRecipe implements Recipe<SimpleInventory> {
 
     @Override
     public ItemStack getResult(DynamicRegistryManager registryManager) {
-        return null;
+        ItemStack token = new ItemStack(ModItems.MAGIC_TOKEN);
+        MagicTokenItem.setSpell(token, getSpell());
+        return token;
     }
 
     @Override

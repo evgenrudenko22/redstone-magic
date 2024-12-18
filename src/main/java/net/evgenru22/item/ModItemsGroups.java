@@ -20,6 +20,7 @@ public class ModItemsGroups {
                         entries.add(ModItems.SOUL_CRASHER);
                         entries.add(ModItems.GIFT_OF_ANCIENTS);
                         entries.add(ModItems.MAGIC_TOKEN);
+                        entries.add(ModItems.SINS_SHARD);
 
                         entries.add(ModItems.PERENNIAL_TORTOISE_SPAWN_EGG);
 
@@ -34,6 +35,7 @@ public class ModItemsGroups {
                         entries.add(ModBlocks.PICTOGRAM_BLOCK);
                         entries.add(ModBlocks.SOUL_RECONSTRUCTOR_BLOCK);
                         entries.add(ModBlocks.SPELL_ENCHANTER_BLOCK);
+                        entries.add(ModBlocks.ORE_OF_SINGS);
                     }).build());
 
     public static void registerItemGroups() {

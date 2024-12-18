@@ -9,18 +9,24 @@
   "item.redstone-magic.cursed_sword": "Cursed Sword",
   "item.redstone-magic.cursed_hoe": "Cursed Hoe",
   "item.redstone-magic.cursed_staff": "Cursed Staff",
+  "item.redstone-magic.magic_token": "Magic Token",
   "item.redstone-magic.gift_of_ancients": "Gift of Ancients",
+  "item.redstone-magic.sins_shard": "Sins shard",
 
   "block.redstone-magic.transmutation_block": "Transmutation block",
   "block.redstone-magic.pictogram_block": "Pictogram block",
   "block.redstone-magic.soul_reconstructor": "Soul Reconstructor",
   "block.redstone-magic.spell_enchanter": "Spell Enchanter",
+  "block.redstone-magic.ore_of_sins": "Ore of sins",
 
   "itemGroup.redstone_magic": "Redstone Magic",
 
   "tooltip.redstone-magic.soul_crasher": "Click on Redstone block and get Cursed Redstone",
   "tooltip.redstone-magic.pictogram_block": "Click on Pictogram block with Cursed Redstone and get Diamond",
 
-  "entity.redstone-magic.perennial_tortoise": "Perennial Tortoise"
+  "entity.redstone-magic.perennial_tortoise": "Perennial Tortoise",
+
+  "key.category.redstone_magic": "Redstone Magic",
+  "key.use_protection": "Use protection"
 
 }

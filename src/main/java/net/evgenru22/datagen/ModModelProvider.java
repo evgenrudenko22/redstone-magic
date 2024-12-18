@@ -22,6 +22,9 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.TRANSMUTATION_BLOCK);
 
         blockStateModelGenerator.registerSimpleState(ModBlocks.SOUL_RECONSTRUCTOR_BLOCK);
+        blockStateModelGenerator.registerSimpleState(ModBlocks.SPELL_ENCHANTER_BLOCK);
+
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ORE_OF_SINGS);
     }
 
     @Override
@@ -32,6 +35,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.CURSED_STAFF, Models.GENERATED);
         itemModelGenerator.register(ModItems.GIFT_OF_ANCIENTS, Models.GENERATED);
         itemModelGenerator.register(ModItems.MAGIC_TOKEN, Models.GENERATED);
+        itemModelGenerator.register(ModItems.SINS_SHARD, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.PERENNIAL_TORTOISE_SPAWN_EGG,
                 new Model(Optional.of(new Identifier("item/template_spawn_egg")), Optional.empty()));
