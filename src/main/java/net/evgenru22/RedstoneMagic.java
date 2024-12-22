@@ -2,6 +2,7 @@ package net.evgenru22;
 
 import net.evgenru22.block.ModBlocks;
 import net.evgenru22.block.entity.ModBlockEntities;
+import net.evgenru22.effect.ModStatusEffects;
 import net.evgenru22.entity.ModEntities;
 import net.evgenru22.entity.custom.PerennialTortoiseEntity;
 import net.evgenru22.event.IconBlockMechanic;
@@ -15,6 +16,7 @@ import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerTickEvents;
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
+import net.fabricmc.fabric.api.registry.FuelRegistry;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -35,6 +37,10 @@ public class RedstoneMagic implements ModInitializer {
 
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
+
+		FuelRegistry.INSTANCE.add(ModItems.REEDS_HEADS, 1200);
+
+		ModStatusEffects.registerModStatusEffects();
 
 		ModBlockEntities.registerBlockEntities();
 		ModScreenHandlers.registerScreenHandlers();

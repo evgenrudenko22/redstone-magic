@@ -21,6 +21,8 @@ public class ModItemsGroups {
                         entries.add(ModItems.GIFT_OF_ANCIENTS);
                         entries.add(ModItems.MAGIC_TOKEN);
                         entries.add(ModItems.SINS_SHARD);
+                        entries.add(ModItems.REEDS_HEADS);
+                        entries.add(ModItems.REEDS_SEEDS);
 
                         entries.add(ModItems.PERENNIAL_TORTOISE_SPAWN_EGG);
 

@@ -12,6 +12,8 @@
   "item.redstone-magic.magic_token": "Magic Token",
   "item.redstone-magic.gift_of_ancients": "Gift of Ancients",
   "item.redstone-magic.sins_shard": "Sins shard",
+  "item.redstone-magic.reeds_seeds": "Reads Seeds",
+  "item.redstone-magic.reeds_heads": "Reads Heads",
 
   "block.redstone-magic.transmutation_block": "Transmutation block",
   "block.redstone-magic.pictogram_block": "Pictogram block",
@@ -27,6 +29,8 @@
   "entity.redstone-magic.perennial_tortoise": "Perennial Tortoise",
 
   "key.category.redstone_magic": "Redstone Magic",
-  "key.use_protection": "Use protection"
+  "key.use_protection": "Use protection",
+
+  "effect.redstone-magic.ichor": "Ichor"
 
 }

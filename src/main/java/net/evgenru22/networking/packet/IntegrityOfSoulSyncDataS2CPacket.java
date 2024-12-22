@@ -9,6 +9,7 @@ import net.minecraft.network.PacketByteBuf;
 public class IntegrityOfSoulSyncDataS2CPacket {
     public static void receive(MinecraftClient client, ClientPlayNetworkHandler handler,
                                PacketByteBuf buf, PacketSender responseSender) {
+        if (client.player == null) return;
         ((IEntityDataSaver) client.player).getPersistentData().putInt("integrity_of_soul", buf.readInt());
     }
 }

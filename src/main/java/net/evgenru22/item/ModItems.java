@@ -1,6 +1,7 @@
 package net.evgenru22.item;
 
 import net.evgenru22.RedstoneMagic;
+import net.evgenru22.block.ModBlocks;
 import net.evgenru22.entity.ModEntities;
 import net.evgenru22.item.custom.ActivatedPickaxeItem;
 import net.evgenru22.item.custom.CursedStaffItem;
@@ -33,6 +34,10 @@ public class ModItems {
 
     public static final Item CURSED_STAFF = registerItem("cursed_staff", new CursedStaffItem(new FabricItemSettings().maxCount(1)));
     public static final Item MAGIC_TOKEN = registerItem("magic_token", new MagicTokenItem(new FabricItemSettings().maxCount(1)));
+
+    public static final Item REEDS_SEEDS = registerItem("reeds_seeds",
+            new AliasedBlockItem(ModBlocks.REEDS_CROP, new FabricItemSettings()));
+    public static final Item REEDS_HEADS = registerItem("reeds_heads", new Item(new FabricItemSettings()));
 
     private static void addItemsToIngredientItemGroup(FabricItemGroupEntries entries) {
         entries.add(CURSED_REDSTONE);

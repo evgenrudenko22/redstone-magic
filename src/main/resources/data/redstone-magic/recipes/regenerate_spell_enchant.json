@@ -1,0 +1,9 @@
+{
+  "type": "redstone-magic:spell_enchanting",
+  "ingredients": [
+    {
+      "item": "redstone-magic:enlightenment_shard"
+    }
+  ],
+  "spell": "regenerate"
+}

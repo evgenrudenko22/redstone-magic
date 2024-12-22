@@ -1,6 +1,7 @@
 package net.evgenru22.datagen;
 
 import net.evgenru22.block.ModBlocks;
+import net.evgenru22.block.custom.ReedsCropBlock;
 import net.evgenru22.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
@@ -25,6 +26,8 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleState(ModBlocks.SPELL_ENCHANTER_BLOCK);
 
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ORE_OF_SINGS);
+
+        blockStateModelGenerator.registerCrop(ModBlocks.REEDS_CROP, ReedsCropBlock.AGE, 0, 1, 2, 3, 4, 5, 6, 7, 8);
     }
 
     @Override
@@ -36,6 +39,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.GIFT_OF_ANCIENTS, Models.GENERATED);
         itemModelGenerator.register(ModItems.MAGIC_TOKEN, Models.GENERATED);
         itemModelGenerator.register(ModItems.SINS_SHARD, Models.GENERATED);
+        itemModelGenerator.register(ModItems.REEDS_HEADS, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.PERENNIAL_TORTOISE_SPAWN_EGG,
                 new Model(Optional.of(new Identifier("item/template_spawn_egg")), Optional.empty()));

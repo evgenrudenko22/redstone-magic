@@ -1,0 +1,9 @@
+{
+  "type": "redstone-magic:spell_enchanting",
+  "ingredients": [
+    {
+      "item": "minecraft:feather"
+    }
+  ],
+  "spell": "slowest falling"
+}

@@ -2,6 +2,7 @@ package net.evgenru22.block;
 
 import net.evgenru22.RedstoneMagic;
 import net.evgenru22.block.custom.PictogramBlock;
+import net.evgenru22.block.custom.ReedsCropBlock;
 import net.evgenru22.block.custom.SoulReconstructorBlock;
 import net.evgenru22.block.custom.SpellEnchanterBlock;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
@@ -27,6 +28,9 @@ public class ModBlocks {
 
     public static final Block ORE_OF_SINGS = registerBlock("ore_of_sins",
             new Block(FabricBlockSettings.copyOf(Blocks.IRON_ORE)));
+
+    public static final Block REEDS_CROP = Registry.register(Registries.BLOCK, new Identifier(RedstoneMagic.MOD_ID, "reeds_crop"),
+            new ReedsCropBlock(FabricBlockSettings.copyOf(Blocks.WHEAT)));
 
 
     private static Block registerBlock(String name, Block block) {
