@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "a": {
+      "item": "redstone-magic:sky_shard"
+    }
+  },
+  "pattern": [
+    "a a",
+    "a a",
+    "   "
+  ],
+  "result": {
+    "item": "redstone-magic:sky_boots"
+  }
+}

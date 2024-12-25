@@ -19,14 +19,16 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.TRANSMUTATION_BLOCK)
                 .add(ModBlocks.SOUL_RECONSTRUCTOR_BLOCK)
                 .add(ModBlocks.SPELL_ENCHANTER_BLOCK)
-                .add(ModBlocks.ORE_OF_SINGS);
+                .add(ModBlocks.ORE_OF_SINGS)
+                .add(ModBlocks.CLEAN_ALTAR_BLOCK);
         getOrCreateTagBuilder(BlockTags.NEEDS_STONE_TOOL)
                 .add(ModBlocks.SOUL_RECONSTRUCTOR_BLOCK)
                 .add(ModBlocks.SPELL_ENCHANTER_BLOCK);
         getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.TRANSMUTATION_BLOCK)
                 .add(ModBlocks.SOUL_RECONSTRUCTOR_BLOCK)
-                .add(ModBlocks.ORE_OF_SINGS);
+                .add(ModBlocks.ORE_OF_SINGS)
+                .add(ModBlocks.CLEAN_ALTAR_BLOCK);
 
     }
 }

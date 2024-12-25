@@ -23,6 +23,12 @@ public class ModItemsGroups {
                         entries.add(ModItems.SINS_SHARD);
                         entries.add(ModItems.REEDS_HEADS);
                         entries.add(ModItems.REEDS_SEEDS);
+                        entries.add(ModItems.SKY_SHARD);
+
+                        entries.add(ModItems.SKY_HELMET);
+                        entries.add(ModItems.SKY_CHESTPLATE);
+                        entries.add(ModItems.SKY_LEGGINGS);
+                        entries.add(ModItems.SKY_BOOTS);
 
                         entries.add(ModItems.PERENNIAL_TORTOISE_SPAWN_EGG);
 
@@ -38,6 +44,7 @@ public class ModItemsGroups {
                         entries.add(ModBlocks.SOUL_RECONSTRUCTOR_BLOCK);
                         entries.add(ModBlocks.SPELL_ENCHANTER_BLOCK);
                         entries.add(ModBlocks.ORE_OF_SINGS);
+                        entries.add(ModBlocks.CLEAN_ALTAR_BLOCK);
                     }).build());
 
     public static void registerItemGroups() {

@@ -12,7 +12,6 @@
     }
   ],
   "output": {
-    "id": "redstone-magic:transmutation_block",
-    "Count": 1
+    "item": "redstone-magic:transmutation_block"
   }
 }

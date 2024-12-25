@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "redstone-magic:enlightenment_shard"
+    },
+    "S": {
+      "item": "redstone-magic:transmutation_block"
+    },
+    "a": {
+      "item": "minecraft:obsidian"
+    }
+  },
+  "pattern": [
+    "###",
+    " S ",
+    " a "
+  ],
+  "result": {
+    "item": "redstone-magic:clean_altar"
+  }
+}

@@ -1,0 +1,38 @@
+{
+    "criteria": {
+        "ignite_obsidian": {
+            "trigger": "minecraft:item_used_on_block",
+            "conditions": {
+                "location": {
+                    "block": [
+                        {
+                            "block": "minecraft:obsidian"
+                        }
+                    ]
+                },
+                "item": {
+                    "items": ["minecraft:flint_and_steel"]
+                }
+            }
+        }
+    },
+    "display": {
+        "title": {
+            "text": "Pictogram",
+            "color": "dark_red"
+        },
+        "description": {
+            "text": "Create a pictogram block when throwing a redstone on an obsidian block and setting fire to obsidian"
+        },
+        "icon": {
+            "item": "redstone-magic:enlightenment_shard"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true
+    },
+    "rewards": {
+        "experience": 50
+    },
+    "parent": "redstone-magic:cursed_redstone"
+}

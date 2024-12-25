@@ -3,6 +3,7 @@
   "values": [
     "redstone-magic:transmutation_block",
     "redstone-magic:soul_reconstructor",
-    "redstone-magic:ore_of_sins"
+    "redstone-magic:ore_of_sins",
+    "redstone-magic:clean_altar"
   ]
 }

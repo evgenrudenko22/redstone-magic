@@ -35,6 +35,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.TRANSMUTATION_BLOCK);
         addDrop(ModBlocks.SOUL_RECONSTRUCTOR_BLOCK);
         addDrop(ModBlocks.SPELL_ENCHANTER_BLOCK);
+        addDrop(ModBlocks.CLEAN_ALTAR_BLOCK);
 
         addDrop(ModBlocks.ORE_OF_SINGS, copperLikeOreDrops(ModBlocks.ORE_OF_SINGS, ModItems.SINS_SHARD));
 

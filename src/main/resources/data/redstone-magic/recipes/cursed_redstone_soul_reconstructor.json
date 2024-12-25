@@ -12,7 +12,7 @@
     }
   ],
   "output": {
-    "id": "redstone-magic:transmutation_block",
-    "Count": 3
+    "item": "redstone-magic:cursed_redstone",
+    "count": 3
   }
 }

@@ -134,6 +134,7 @@ public class SoulReconstructorBlockEntity extends BlockEntity implements Extende
             markDirty(world, pos, state);
         }
 
+        RedstoneMagic.LOGGER.debug("Soul Recosntructor Click");
         // RedstoneMagic.LOGGER.debug("Progress = {}", progress);
     }
 

@@ -9,6 +9,7 @@ import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
 import net.minecraft.data.client.Model;
 import net.minecraft.data.client.Models;
+import net.minecraft.item.ArmorItem;
 import net.minecraft.util.Identifier;
 
 import java.util.Optional;
@@ -24,6 +25,7 @@ public class ModModelProvider extends FabricModelProvider {
 
         blockStateModelGenerator.registerSimpleState(ModBlocks.SOUL_RECONSTRUCTOR_BLOCK);
         blockStateModelGenerator.registerSimpleState(ModBlocks.SPELL_ENCHANTER_BLOCK);
+        blockStateModelGenerator.registerSimpleState(ModBlocks.CLEAN_ALTAR_BLOCK);
 
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ORE_OF_SINGS);
 
@@ -40,6 +42,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.MAGIC_TOKEN, Models.GENERATED);
         itemModelGenerator.register(ModItems.SINS_SHARD, Models.GENERATED);
         itemModelGenerator.register(ModItems.REEDS_HEADS, Models.GENERATED);
+        itemModelGenerator.register(ModItems.SKY_SHARD, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.PERENNIAL_TORTOISE_SPAWN_EGG,
                 new Model(Optional.of(new Identifier("item/template_spawn_egg")), Optional.empty()));
@@ -50,5 +53,10 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.CURSED_SHOVEL, Models.HANDHELD);
         itemModelGenerator.register(ModItems.CURSED_SWORD, Models.HANDHELD);
         itemModelGenerator.register(ModItems.CURSED_HOE, Models.HANDHELD);
+
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.SKY_HELMET));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.SKY_CHESTPLATE));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.SKY_LEGGINGS));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.SKY_BOOTS));
     }
 }

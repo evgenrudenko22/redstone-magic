@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "redstone-magic:sky_helmet",
+    "redstone-magic:sky_chestplate",
+    "redstone-magic:sky_leggings",
+    "redstone-magic:sky_boots"
+  ]
+}

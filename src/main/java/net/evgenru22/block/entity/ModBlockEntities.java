@@ -16,6 +16,10 @@ public class ModBlockEntities {
             Registry.register(Registries.BLOCK_ENTITY_TYPE, new Identifier(RedstoneMagic.MOD_ID, "spell_enchant_be"),
                     BlockEntityType.Builder.create(SpellEnchanterBlockEntity::new,
                             ModBlocks.SPELL_ENCHANTER_BLOCK).build());
+    public static final BlockEntityType<CleanAltarBlockEntity> CLEAN_ALTAR_BLOCK_ENTITY_BLOCK_ENTITY =
+            Registry.register(Registries.BLOCK_ENTITY_TYPE, new Identifier(RedstoneMagic.MOD_ID, "clean_altar_be"),
+                    BlockEntityType.Builder.create(CleanAltarBlockEntity::new,
+                            ModBlocks.CLEAN_ALTAR_BLOCK).build());
 
     public static void registerBlockEntities() {
         RedstoneMagic.LOGGER.info("Registering Block Entities for" + RedstoneMagic.MOD_ID);

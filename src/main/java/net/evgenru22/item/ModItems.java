@@ -20,6 +20,7 @@ public class ModItems {
     public static final Item ENLIGHTENMENT_SHARD = registerItem("enlightenment_shard", new Item(new FabricItemSettings()));
     public static final Item GIFT_OF_ANCIENTS = registerItem("gift_of_ancients", new Item(new FabricItemSettings()));
     public static final Item SINS_SHARD = registerItem("sins_shard", new Item(new FabricItemSettings()));
+    public static final Item SKY_SHARD = registerItem("sky_shard", new Item(new FabricItemSettings()));
 
     public static final Item SOUL_CRASHER = registerItem("soul_crasher", new SoulCrasher(new FabricItemSettings().maxCount(1)));
 
@@ -38,6 +39,15 @@ public class ModItems {
     public static final Item REEDS_SEEDS = registerItem("reeds_seeds",
             new AliasedBlockItem(ModBlocks.REEDS_CROP, new FabricItemSettings()));
     public static final Item REEDS_HEADS = registerItem("reeds_heads", new Item(new FabricItemSettings()));
+
+    public static final Item SKY_HELMET = registerItem("sky_helmet",
+            new ArmorItem(ModArmorMaterials.SKY, ArmorItem.Type.HELMET, new FabricItemSettings()));
+    public static final Item SKY_CHESTPLATE = registerItem("sky_chestplate",
+            new ArmorItem(ModArmorMaterials.SKY, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()));
+    public static final Item SKY_LEGGINGS = registerItem("sky_leggings",
+            new ArmorItem(ModArmorMaterials.SKY, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
+    public static final Item SKY_BOOTS = registerItem("sky_boots",
+            new ArmorItem(ModArmorMaterials.SKY, ArmorItem.Type.BOOTS, new FabricItemSettings()));
 
     private static void addItemsToIngredientItemGroup(FabricItemGroupEntries entries) {
         entries.add(CURSED_REDSTONE);

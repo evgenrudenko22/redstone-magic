@@ -1,10 +1,7 @@
 package net.evgenru22.block;
 
 import net.evgenru22.RedstoneMagic;
-import net.evgenru22.block.custom.PictogramBlock;
-import net.evgenru22.block.custom.ReedsCropBlock;
-import net.evgenru22.block.custom.SoulReconstructorBlock;
-import net.evgenru22.block.custom.SpellEnchanterBlock;
+import net.evgenru22.block.custom.*;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
@@ -31,6 +28,9 @@ public class ModBlocks {
 
     public static final Block REEDS_CROP = Registry.register(Registries.BLOCK, new Identifier(RedstoneMagic.MOD_ID, "reeds_crop"),
             new ReedsCropBlock(FabricBlockSettings.copyOf(Blocks.WHEAT)));
+
+    public static final Block CLEAN_ALTAR_BLOCK = registerBlock("clean_altar",
+            new CleanAltarBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).nonOpaque()));
 
 
     private static Block registerBlock(String name, Block block) {

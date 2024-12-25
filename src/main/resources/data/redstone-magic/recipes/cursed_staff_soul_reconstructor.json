@@ -12,7 +12,6 @@
     }
   ],
   "output": {
-    "id": "redstone-magic:cursed_staff",
-    "Count": 1
+    "item": "redstone-magic:cursed_staff"
   }
 }

@@ -12,7 +12,7 @@
     }
   ],
   "output": {
-    "id": "redstone-magic:magic_token",
-    "Count": 1
+    "item": "redstone-magic:magic_token",
+    "count": 2
   }
 }

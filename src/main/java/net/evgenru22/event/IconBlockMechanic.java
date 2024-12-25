@@ -1,5 +1,6 @@
 package net.evgenru22.event;
 
+import net.evgenru22.RedstoneMagic;
 import net.evgenru22.block.ModBlocks;
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerTickEvents;
 import net.minecraft.block.Blocks;
@@ -17,9 +18,8 @@ public class IconBlockMechanic {
     public static void register() {
         ServerTickEvents.END_WORLD_TICK.register(world -> {
             if (world instanceof ServerWorld) {
-                ServerWorld serverWorld = (ServerWorld) world;
 
-                List<ItemEntity> items = serverWorld.getEntitiesByClass(
+                List<ItemEntity> items = world.getEntitiesByClass(
                         ItemEntity.class,
                         new Box(-30000000, 0, -30000000, 30000000, 256, 30000000),
                         itemEntity -> !itemEntity.isRemoved()
@@ -29,14 +29,14 @@ public class IconBlockMechanic {
                     if (itemEntity.getStack().getItem() == Items.REDSTONE) {
                         BlockPos pos = itemEntity.getBlockPos();
 
-                        if (serverWorld.getBlockState(pos.down()).getBlock() == Blocks.OBSIDIAN) {
-                            if (serverWorld.getBlockState(pos).getBlock() == Blocks.FIRE) {
+                        if (world.getBlockState(pos.down()).getBlock() == Blocks.OBSIDIAN) {
+                            if (world.getBlockState(pos).getBlock() == Blocks.FIRE) {
                                 itemEntity.discard();
-                                serverWorld.setBlockState(pos, Blocks.AIR.getDefaultState());
+                                world.setBlockState(pos, Blocks.AIR.getDefaultState());
 
-                                serverWorld.setBlockState(pos, ModBlocks.PICTOGRAM_BLOCK.getDefaultState());
+                                world.setBlockState(pos, ModBlocks.PICTOGRAM_BLOCK.getDefaultState());
 
-                                serverWorld.playSound(null, pos, SoundEvents.ENTITY_ITEM_PICKUP, SoundCategory.BLOCKS, 1.0f, 1.0f);
+                                world.playSound(null, pos, SoundEvents.ENTITY_ITEM_PICKUP, SoundCategory.BLOCKS, 1.0f, 1.0f);
                             }
                         }
                     }

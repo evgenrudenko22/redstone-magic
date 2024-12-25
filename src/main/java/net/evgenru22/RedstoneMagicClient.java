@@ -2,6 +2,7 @@ package net.evgenru22;
 
 import net.evgenru22.block.ModBlocks;
 import net.evgenru22.block.entity.ModBlockEntities;
+import net.evgenru22.block.entity.renderer.CleanAltarBlockEntityRenderer;
 import net.evgenru22.block.entity.renderer.SoulReconstructorBlockEntityRenderer;
 import net.evgenru22.block.entity.renderer.SpellEnchanterBlockEntityRenderer;
 import net.evgenru22.client.IntegrityOfSoulHudOverlay;
@@ -33,6 +34,7 @@ public class RedstoneMagicClient implements ClientModInitializer {
 
         BlockEntityRendererFactories.register(ModBlockEntities.SOUL_RECONSTRUCTOR_BLOCK_ENTITY_BLOCK_ENTITY, SoulReconstructorBlockEntityRenderer::new);
         BlockEntityRendererFactories.register(ModBlockEntities.SPELL_ENCHANTER_BLOCK_ENTITY_BLOCK_ENTITY, SpellEnchanterBlockEntityRenderer::new);
+        BlockEntityRendererFactories.register(ModBlockEntities.CLEAN_ALTAR_BLOCK_ENTITY_BLOCK_ENTITY, CleanAltarBlockEntityRenderer::new);
 
         EntityRendererRegistry.register(ModEntities.PERENNIAL_TORTOISE, PerennialTortoiseRenderer::new);
         EntityModelLayerRegistry.registerModelLayer(ModModelLayers.PERENNIAL_TORTOISE, PerennialTortoiseModel::getTexturedModelData);

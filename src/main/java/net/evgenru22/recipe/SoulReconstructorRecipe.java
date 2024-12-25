@@ -82,7 +82,7 @@ public class SoulReconstructorRecipe implements Recipe<SimpleInventory> {
 
         public static final Codec<SoulReconstructorRecipe> CODEC = RecordCodecBuilder.create(in -> in.group(
                 validateAmount(Ingredient.DISALLOW_EMPTY_CODEC, 3).fieldOf("ingredients").forGetter(SoulReconstructorRecipe::getIngredients),
-                ItemStack.CODEC.fieldOf("output").forGetter(r -> r.output)
+                ItemStack.RECIPE_RESULT_CODEC.fieldOf("output").forGetter(r -> r.output)
         ).apply(in, SoulReconstructorRecipe::new));
 
         private static Codec<List<Ingredient>> validateAmount(Codec<Ingredient> delegate, int max) {

@@ -14,12 +14,18 @@
   "item.redstone-magic.sins_shard": "Sins shard",
   "item.redstone-magic.reeds_seeds": "Reads Seeds",
   "item.redstone-magic.reeds_heads": "Reads Heads",
+  "item.redstone-magic.sky_shard": "Sky Shard",
+  "item.redstone-magic.sky_helmet": "Sky Helmet",
+  "item.redstone-magic.sky_chestplate": "Sky Chestplate",
+  "item.redstone-magic.sky_leggings": "Sky Leggings",
+  "item.redstone-magic.sky_boots": "Sky Boots",
 
   "block.redstone-magic.transmutation_block": "Transmutation block",
   "block.redstone-magic.pictogram_block": "Pictogram block",
   "block.redstone-magic.soul_reconstructor": "Soul Reconstructor",
   "block.redstone-magic.spell_enchanter": "Spell Enchanter",
   "block.redstone-magic.ore_of_sins": "Ore of sins",
+  "block.redstone-magic.clean_altar": "Clean Altar",
 
   "itemGroup.redstone_magic": "Redstone Magic",
 

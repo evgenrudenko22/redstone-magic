@@ -1,6 +1,7 @@
 package net.evgenru22.block.custom;
 
 import com.mojang.serialization.MapCodec;
+import net.evgenru22.RedstoneMagic;
 import net.evgenru22.block.ModBlocks;
 import net.evgenru22.block.entity.ModBlockEntities;
 import net.evgenru22.block.entity.SoulReconstructorBlockEntity;
@@ -23,8 +24,11 @@ import org.jetbrains.annotations.Nullable;
 public class SoulReconstructorBlock extends BlockWithEntity implements BlockEntityProvider {
     protected static final VoxelShape SHAPE = Block.createCuboidShape(1, 0, 1, 15, 11, 15);
 
+    public static final MapCodec<SoulReconstructorBlock> CODEC = SpellEnchanterBlock.createCodec(SoulReconstructorBlock::new);
+
     public SoulReconstructorBlock(Settings settings) {
         super(settings);
+        RedstoneMagic.LOGGER.debug("Tick");
     }
 
     @Override
@@ -39,7 +43,7 @@ public class SoulReconstructorBlock extends BlockWithEntity implements BlockEnti
 
     @Override
     protected MapCodec<? extends BlockWithEntity> getCodec() {
-        return null;
+        return CODEC;
     }
 
     @Override

@@ -20,13 +20,15 @@ import org.jetbrains.annotations.Nullable;
 
 public class SpellEnchanterBlock extends BlockWithEntity implements BlockEntityProvider {
 
+    public static final MapCodec<SpellEnchanterBlock> CODEC = SpellEnchanterBlock.createCodec(SpellEnchanterBlock::new);
+
     public SpellEnchanterBlock(Settings settings) {
         super(settings);
     }
 
     @Override
     protected MapCodec<? extends BlockWithEntity> getCodec() {
-        return null;
+        return CODEC;
     }
 
     @Override

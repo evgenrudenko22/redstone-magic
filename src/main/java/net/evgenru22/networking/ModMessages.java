@@ -8,6 +8,10 @@ import net.minecraft.util.Identifier;
 public class ModMessages {
     public static final Identifier INTEGRITY_OF_SOUL_SYNC_ID = new Identifier(RedstoneMagic.MOD_ID, "integrity_of_soul_sync");
 
+    public static void registerC2SPackets() {
+
+    }
+
     public static void registerS2CPackets() {
         ClientPlayNetworking.registerGlobalReceiver(INTEGRITY_OF_SOUL_SYNC_ID, IntegrityOfSoulSyncDataS2CPacket::receive);
     }

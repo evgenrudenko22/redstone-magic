@@ -1,0 +1,35 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "display": {
+        "title": {
+            "text": "Cursed Redstone?",
+            "color": "dark_purple"
+        },
+        "description": {
+            "text": "Get a Cursed Redstone as a result of hitting Soul Crasher on ther Redstone block"
+        },
+        "icon": {
+            "item": "redstone-magic:cursed_redstone"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false,
+        "background": "minecraft:textures/gui/advancements/backgrounds/nether.png"
+    },
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "redstone-magic:cursed_redstone"
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "experience": 2
+    }
+}
