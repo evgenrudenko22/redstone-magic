@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "redstone-magic:block/sky_reactor_block"
+    }
+  }
+}

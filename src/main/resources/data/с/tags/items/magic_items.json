@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "redstone-magic:cursed_redstone",
+    "redstone-magic:core_level_1",
+    "redstone-magic:core_level_2",
+    "redstone-magic:core_level_3"
+  ]
+}

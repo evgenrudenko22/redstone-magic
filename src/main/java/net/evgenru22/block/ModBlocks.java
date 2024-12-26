@@ -32,6 +32,11 @@ public class ModBlocks {
     public static final Block CLEAN_ALTAR_BLOCK = registerBlock("clean_altar",
             new CleanAltarBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).nonOpaque()));
 
+    public static final Block SKY_REACTOR_BLOCK = registerBlock("sky_reactor_block",
+            new Block(FabricBlockSettings.copyOf(Blocks.STONE_BRICKS)));
+    public static final Block SKY_REACTOR_CORE = registerBlock("sky_reactor_core",
+            new SkyReactorCore(FabricBlockSettings.copyOf(Blocks.STONE_BRICKS)));
+
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);

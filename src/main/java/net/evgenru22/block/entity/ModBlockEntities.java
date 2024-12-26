@@ -20,6 +20,10 @@ public class ModBlockEntities {
             Registry.register(Registries.BLOCK_ENTITY_TYPE, new Identifier(RedstoneMagic.MOD_ID, "clean_altar_be"),
                     BlockEntityType.Builder.create(CleanAltarBlockEntity::new,
                             ModBlocks.CLEAN_ALTAR_BLOCK).build());
+    public static final BlockEntityType<SkyReactorCoreBlockEntity> SKY_REACTOR_CORE_BLOCK_ENTITY_BLOCK_ENTITY =
+            Registry.register(Registries.BLOCK_ENTITY_TYPE, new Identifier(RedstoneMagic.MOD_ID, "sky_reactor_core_be"),
+                    BlockEntityType.Builder.create(SkyReactorCoreBlockEntity::new,
+                            ModBlocks.SKY_REACTOR_CORE).build());
 
     public static void registerBlockEntities() {
         RedstoneMagic.LOGGER.info("Registering Block Entities for" + RedstoneMagic.MOD_ID);

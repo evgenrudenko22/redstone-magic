@@ -13,6 +13,7 @@ import net.evgenru22.entity.client.PerennialTortoiseRenderer;
 import net.evgenru22.event.KeyInputHandler;
 import net.evgenru22.networking.ModMessages;
 import net.evgenru22.screen.ModScreenHandlers;
+import net.evgenru22.screen.SkyReactorScreen;
 import net.evgenru22.screen.SoulReconstructorScreen;
 import net.evgenru22.screen.SpellEnchanterScreen;
 import net.fabricmc.api.ClientModInitializer;
@@ -31,6 +32,7 @@ public class RedstoneMagicClient implements ClientModInitializer {
 
         HandledScreens.register(ModScreenHandlers.SOUL_RECONSTRUCTOR_SCREEN_HANDLER, SoulReconstructorScreen::new);
         HandledScreens.register(ModScreenHandlers.SPELL_ENCHANTER_SCREEN_HANDLER_SCREEN_HANDLER, SpellEnchanterScreen::new);
+        HandledScreens.register(ModScreenHandlers.SKY_REACTOR_SCREEN_HANDLER_SCREEN_HANDLER, SkyReactorScreen::new);
 
         BlockEntityRendererFactories.register(ModBlockEntities.SOUL_RECONSTRUCTOR_BLOCK_ENTITY_BLOCK_ENTITY, SoulReconstructorBlockEntityRenderer::new);
         BlockEntityRendererFactories.register(ModBlockEntities.SPELL_ENCHANTER_BLOCK_ENTITY_BLOCK_ENTITY, SpellEnchanterBlockEntityRenderer::new);

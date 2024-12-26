@@ -19,6 +19,11 @@
   "item.redstone-magic.sky_chestplate": "Sky Chestplate",
   "item.redstone-magic.sky_leggings": "Sky Leggings",
   "item.redstone-magic.sky_boots": "Sky Boots",
+  "item.redstone-magic.core_level_1": "Core Level 1",
+  "item.redstone-magic.core_level_2": "Core Level 2",
+  "item.redstone-magic.core_level_3": "Core Level 3",
+  "item.redstone-magic.sky_amulet": "Sky Amulet",
+  "item.redstone-magic.sky_amulet_trinket": "Sky Amulet",
 
   "block.redstone-magic.transmutation_block": "Transmutation block",
   "block.redstone-magic.pictogram_block": "Pictogram block",
@@ -26,6 +31,8 @@
   "block.redstone-magic.spell_enchanter": "Spell Enchanter",
   "block.redstone-magic.ore_of_sins": "Ore of sins",
   "block.redstone-magic.clean_altar": "Clean Altar",
+  "block.redstone-magic.sky_reactor_block": "Sky Reactor Block",
+  "block.redstone-magic.sky_reactor_core": "Sky Reactor Core",
 
   "itemGroup.redstone_magic": "Redstone Magic",
 

@@ -14,6 +14,9 @@ public class ModScreenHandlers {
     public static final ScreenHandlerType<SpellEnchanterScreenHandler> SPELL_ENCHANTER_SCREEN_HANDLER_SCREEN_HANDLER =
             Registry.register(Registries.SCREEN_HANDLER, new Identifier(RedstoneMagic.MOD_ID, "spell_enchanter"),
                     new ExtendedScreenHandlerType<>(SpellEnchanterScreenHandler::new));
+    public static final ScreenHandlerType<SkyReactorScreenHandler> SKY_REACTOR_SCREEN_HANDLER_SCREEN_HANDLER =
+            Registry.register(Registries.SCREEN_HANDLER, new Identifier(RedstoneMagic.MOD_ID, "sky_reactor_core"),
+                    new ExtendedScreenHandlerType<>(SkyReactorScreenHandler::new));
 
     public static void registerScreenHandlers() {
         RedstoneMagic.LOGGER.info("Registering Screen Handlers for " + RedstoneMagic.MOD_ID);

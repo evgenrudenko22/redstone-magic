@@ -14,6 +14,8 @@ import net.minecraft.util.collection.DefaultedList;
 import net.minecraft.util.dynamic.Codecs;
 import net.minecraft.world.World;
 
+import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 public class SoulReconstructorRecipe implements Recipe<SimpleInventory> {
@@ -32,11 +34,25 @@ public class SoulReconstructorRecipe implements Recipe<SimpleInventory> {
             return false;
         }
 
-        for (int i = 0; i < 3; i++) {
-            if (!recipeItems.get(i).test(inventory.getStack(i + 1))) return false;
-        }
+        List<Ingredient> remainingIngredients = new ArrayList<>(recipeItems);
 
-        return true;
+        for (int i = 0; i < 3; i++) {
+            ItemStack stack = inventory.getStack(i + 1);
+            boolean matched = false;
+
+            for (Iterator<Ingredient> iterator = remainingIngredients.iterator(); iterator.hasNext(); ) {
+                Ingredient ingredient = iterator.next();
+                if (ingredient.test(stack)) {
+                    iterator.remove();
+                    matched = true;
+                    break;
+                }
+            }
+            if (!matched) {
+                return false;
+            }
+        }
+        return remainingIngredients.isEmpty();
     }
 
     @Override

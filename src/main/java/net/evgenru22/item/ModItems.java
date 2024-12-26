@@ -3,10 +3,7 @@ package net.evgenru22.item;
 import net.evgenru22.RedstoneMagic;
 import net.evgenru22.block.ModBlocks;
 import net.evgenru22.entity.ModEntities;
-import net.evgenru22.item.custom.ActivatedPickaxeItem;
-import net.evgenru22.item.custom.CursedStaffItem;
-import net.evgenru22.item.custom.MagicTokenItem;
-import net.evgenru22.item.custom.SoulCrasher;
+import net.evgenru22.item.custom.*;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
@@ -48,6 +45,18 @@ public class ModItems {
             new ArmorItem(ModArmorMaterials.SKY, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
     public static final Item SKY_BOOTS = registerItem("sky_boots",
             new ArmorItem(ModArmorMaterials.SKY, ArmorItem.Type.BOOTS, new FabricItemSettings()));
+
+    public static final Item CORE_LEVEL_1 = registerItem("core_level_1",
+            new Item(new FabricItemSettings().maxCount(1)));
+    public static final Item CORE_LEVEL_2 = registerItem("core_level_2",
+            new Item(new FabricItemSettings().maxCount(1)));
+    public static final Item CORE_LEVEL_3 = registerItem("core_level_3",
+            new Item(new FabricItemSettings().maxCount(1)));
+
+    public static final Item SKY_AMULET = registerItem("sky_amulet",
+            new SkyAmulet(new FabricItemSettings().maxCount(1)));
+    public static final Item SKY_AMULET_TRINKET = registerItem("sky_amulet_trinket",
+            new SkyAmuletTrinket(new FabricItemSettings().maxCount(1)));
 
     private static void addItemsToIngredientItemGroup(FabricItemGroupEntries entries) {
         entries.add(CURSED_REDSTONE);

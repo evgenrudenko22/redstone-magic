@@ -22,6 +22,8 @@ public class ModModelProvider extends FabricModelProvider {
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.TRANSMUTATION_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SKY_REACTOR_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SKY_REACTOR_CORE);
 
         blockStateModelGenerator.registerSimpleState(ModBlocks.SOUL_RECONSTRUCTOR_BLOCK);
         blockStateModelGenerator.registerSimpleState(ModBlocks.SPELL_ENCHANTER_BLOCK);
@@ -43,6 +45,11 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.SINS_SHARD, Models.GENERATED);
         itemModelGenerator.register(ModItems.REEDS_HEADS, Models.GENERATED);
         itemModelGenerator.register(ModItems.SKY_SHARD, Models.GENERATED);
+        itemModelGenerator.register(ModItems.CORE_LEVEL_1, Models.GENERATED);
+        itemModelGenerator.register(ModItems.CORE_LEVEL_2, Models.GENERATED);
+        itemModelGenerator.register(ModItems.CORE_LEVEL_3, Models.GENERATED);
+        itemModelGenerator.register(ModItems.SKY_AMULET, Models.GENERATED);
+        itemModelGenerator.register(ModItems.SKY_AMULET_TRINKET, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.PERENNIAL_TORTOISE_SPAWN_EGG,
                 new Model(Optional.of(new Identifier("item/template_spawn_egg")), Optional.empty()));

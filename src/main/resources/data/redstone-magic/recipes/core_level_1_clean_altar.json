@@ -1,0 +1,11 @@
+{
+  "type": "redstone-magic:clean_altar",
+  "input": [
+    {
+      "item": "redstone-magic:gift_of_ancients"
+    }
+  ],
+  "output": {
+    "item": "redstone-magic:core_level_1"
+  }
+}

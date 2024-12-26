@@ -1,4 +1,4 @@
-// 1.20.4	2024-12-24T12:05:05.513088962	Redstone Magic/Recipes
+// 1.20.4	2024-12-26T11:16:48.055889578	Redstone Magic/Recipes
 825a96112265b549dc8231a8436651d01c3b28b9 data/redstone-magic/recipes/cursed_shovel.json
 17b4dc8ee2622a78eb95e781e2b1e824a69f7f80 data/redstone-magic/advancements/recipes/tools/cursed_sword.json
 a69f5129d969302eb67ac29109d3132bc3411272 data/redstone-magic/recipes/sky_boots.json
@@ -6,6 +6,9 @@ a69f5129d969302eb67ac29109d3132bc3411272 data/redstone-magic/recipes/sky_boots.j
 e02a9986eea1698f315aae85fbd5052d6b1c047c data/redstone-magic/recipes/cursed_pickaxe.json
 9aa9f58a0af164de365313162ddf79fdbd55f85b data/redstone-magic/recipes/cursed_axe.json
 a24da69cf9a23e99e7113337e17b46495ea2b963 data/redstone-magic/recipes/cursed_hoe.json
+350d977311108c92f0e099d0fbb95bfdf63794bf data/redstone-magic/advancements/recipes/misc/sky_amulet.json
+b01c57ee8df3e9cb3867a50cd55bb3ffdd560237 data/redstone-magic/recipes/sky_amulet_trinket.json
+2c9ae865645d532c013a75cc90c43d75bb85132a data/redstone-magic/advancements/recipes/misc/sky_amulet_trinket.json
 2273490ad64c76a07c30595c282e6671d834342d data/redstone-magic/advancements/recipes/misc/clean_altar.json
 788776cde4609c479a90cd9adbfc2db83d0839b7 data/redstone-magic/advancements/recipes/misc/sky_leggings.json
 017023d40280afc4e1d4909694e8b33eebaf0f8a data/redstone-magic/advancements/recipes/misc/sky_boots_2.json
@@ -23,6 +26,7 @@ fa9da650bcabc8320606c10b41317865f938814a data/redstone-magic/recipes/soul_recons
 3c737f2026d682ea6e5706d220999e55164a4fdd data/redstone-magic/recipes/iron_block_from_smelting_transmutation_block.json
 a779cbffbce6811bf6b966bc2eedf518def8f875 data/redstone-magic/advancements/recipes/tools/cursed_pickaxe.json
 28fae3b13b7fbab8719f67974c220bdcb848222d data/redstone-magic/advancements/recipes/misc/iron_block_from_smelting_transmutation_block.json
+824bfbef97abf0aed6e365f0151658b276e57208 data/redstone-magic/recipes/sky_amulet.json
 da9c7eb02b00b4f65436b7cacf5dd97d262b65a8 data/redstone-magic/advancements/recipes/misc/transmutation_block.json
 8604ac399164c3adc92f7b8ad16e65cb889dd1e8 data/redstone-magic/recipes/sky_leggings.json
 8d9f601eda5a83933b5d361439fde6b09082f673 data/redstone-magic/recipes/transmutation_block.json

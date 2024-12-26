@@ -159,5 +159,14 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('a', ModItems.SKY_SHARD)
                 .criterion(hasItem(ModItems.SKY_SHARD), conditionsFromItem(ModItems.SKY_SHARD))
                 .offerTo(recipeExporter, new Identifier(RedstoneMagic.MOD_ID, getRecipeName(ModItems.SKY_BOOTS) + "_2"));
+        /* ------------------------------------------------- */
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.SKY_AMULET_TRINKET)
+                .input(ModItems.SKY_AMULET)
+                .criterion(hasItem(ModItems.SKY_AMULET), conditionsFromItem(ModItems.SKY_AMULET))
+                .offerTo(recipeExporter, new Identifier(RedstoneMagic.MOD_ID, getRecipeName(ModItems.SKY_AMULET_TRINKET)));
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.SKY_AMULET)
+                .input(ModItems.SKY_AMULET_TRINKET)
+                .criterion(hasItem(ModItems.SKY_AMULET_TRINKET), conditionsFromItem(ModItems.SKY_AMULET_TRINKET))
+                .offerTo(recipeExporter, new Identifier(RedstoneMagic.MOD_ID, getRecipeName(ModItems.SKY_AMULET)));
     }
 }

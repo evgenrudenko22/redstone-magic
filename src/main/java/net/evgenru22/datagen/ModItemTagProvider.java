@@ -1,6 +1,7 @@
 package net.evgenru22.datagen;
 
 import net.evgenru22.item.ModItems;
+import net.evgenru22.util.ModTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.minecraft.registry.RegistryWrapper;
@@ -16,6 +17,8 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
     @Override
     protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
         getOrCreateTagBuilder(ItemTags.TRIM_MATERIALS)
+                .add(ModItems.SKY_HELMET, ModItems.SKY_CHESTPLATE, ModItems.SKY_LEGGINGS, ModItems.SKY_BOOTS);
+        getOrCreateTagBuilder(ModTags.Items.SKY_ARMOR)
                 .add(ModItems.SKY_HELMET, ModItems.SKY_CHESTPLATE, ModItems.SKY_LEGGINGS, ModItems.SKY_BOOTS);
     }
 }

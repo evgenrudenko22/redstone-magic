@@ -1,0 +1,12 @@
+{
+  "type": "redstone-magic:sky_reactor_core",
+  "core_level": "redstone-magic:core_level_3",
+  "ingredient": [
+    {
+      "item": "minecraft:elytra"
+    }
+  ],
+  "output": {
+    "item": "redstone-magic:sky_amulet"
+  }
+}

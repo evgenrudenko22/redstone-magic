@@ -21,5 +21,10 @@ public class ModRecipes {
                 CleanAltarRecipe.Serializer.INSTANCE);
         Registry.register(Registries.RECIPE_TYPE, new Identifier(RedstoneMagic.MOD_ID, CleanAltarRecipe.Type.ID),
                 CleanAltarRecipe.Type.INSTANCE);
+
+        Registry.register(Registries.RECIPE_SERIALIZER, new Identifier(RedstoneMagic.MOD_ID, SkyReactorCoreRecipe.Serializer.ID),
+                SkyReactorCoreRecipe.Serializer.INSTANCE);
+        Registry.register(Registries.RECIPE_TYPE, new Identifier(RedstoneMagic.MOD_ID, SkyReactorCoreRecipe.Type.ID),
+                SkyReactorCoreRecipe.Type.INSTANCE);
     }
 }

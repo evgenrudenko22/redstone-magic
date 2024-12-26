@@ -17,6 +17,14 @@ repositories {
 	// See https://docs.gradle.org/current/userguide/declaring_repositories.html
 	// for more information about repositories.
 	maven { url "https://maven.shedaniel.me" }
+	maven {
+		name = "TerraformersMC"
+		url = "https://maven.terraformersmc.com/"
+	}
+	maven {
+		name = "Ladysnake Libs"
+		url = 'https://maven.ladysnake.org/releases'
+	}
 }
 
 fabricApi {
@@ -38,6 +46,8 @@ dependencies {
 	modRuntimeOnly "me.shedaniel:RoughlyEnoughItems-fabric:14.0.699"
 	modImplementation "dev.architectury:architectury-fabric:11.1.13"
 	modApi("me.shedaniel.cloth:basic-math:+")
+
+	modImplementation "dev.emi:trinkets:${trinkets_version}"
 	
 }
 

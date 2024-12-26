@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "redstone-magic:sky_amulet_trinket"
+    }
+  ],
+  "result": {
+    "item": "redstone-magic:sky_amulet"
+  }
+}

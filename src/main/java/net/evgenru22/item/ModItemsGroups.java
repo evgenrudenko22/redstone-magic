@@ -24,6 +24,12 @@ public class ModItemsGroups {
                         entries.add(ModItems.REEDS_HEADS);
                         entries.add(ModItems.REEDS_SEEDS);
                         entries.add(ModItems.SKY_SHARD);
+                        entries.add(ModItems.CORE_LEVEL_1);
+                        entries.add(ModItems.CORE_LEVEL_2);
+                        entries.add(ModItems.CORE_LEVEL_3);
+
+                        entries.add(ModItems.SKY_AMULET);
+                        entries.add(ModItems.SKY_AMULET_TRINKET);
 
                         entries.add(ModItems.SKY_HELMET);
                         entries.add(ModItems.SKY_CHESTPLATE);
@@ -45,6 +51,8 @@ public class ModItemsGroups {
                         entries.add(ModBlocks.SPELL_ENCHANTER_BLOCK);
                         entries.add(ModBlocks.ORE_OF_SINGS);
                         entries.add(ModBlocks.CLEAN_ALTAR_BLOCK);
+                        entries.add(ModBlocks.SKY_REACTOR_BLOCK);
+                        entries.add(ModBlocks.SKY_REACTOR_CORE);
                     }).build());
 
     public static void registerItemGroups() {

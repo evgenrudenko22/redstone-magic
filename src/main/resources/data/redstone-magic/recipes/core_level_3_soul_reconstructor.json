@@ -1,0 +1,18 @@
+{
+  "type": "redstone-magic:soul_reconstructor",
+  "ingredients": [
+    {
+      "item": "redstone-magic:core_level_2"
+    },
+    {
+      "item": "minecraft:nether_star"
+    },
+    {
+      "item": "minecraft:obsidian"
+    }
+  ],
+  "output": {
+    "item": "redstone-magic:core_level_3",
+    "count": 1
+  }
+}

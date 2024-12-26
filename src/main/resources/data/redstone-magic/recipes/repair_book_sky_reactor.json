@@ -1,0 +1,12 @@
+{
+  "type": "redstone-magic:sky_reactor_core",
+  "core_level": "redstone-magic:core_level_2",
+  "ingredient": [
+    {
+      "item": "minecraft:book"
+    }
+  ],
+  "output": {
+    "item": "minecraft:enchanted_book"
+  }
+}
