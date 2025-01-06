@@ -4,6 +4,8 @@ import net.evgenru22.RedstoneMagic;
 import net.evgenru22.block.ModBlocks;
 import net.evgenru22.entity.ModEntities;
 import net.evgenru22.item.custom.*;
+import net.evgenru22.item.custom.trinkets.QuickRingTrinket;
+import net.evgenru22.item.custom.trinkets.SkyAmuletTrinket;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
@@ -57,6 +59,9 @@ public class ModItems {
             new SkyAmulet(new FabricItemSettings().maxCount(1)));
     public static final Item SKY_AMULET_TRINKET = registerItem("sky_amulet_trinket",
             new SkyAmuletTrinket(new FabricItemSettings().maxCount(1)));
+
+    public static final Item QUICK_RING = registerItem("quick_ring",
+            new QuickRingTrinket(new FabricItemSettings().maxCount(1)));
 
     private static void addItemsToIngredientItemGroup(FabricItemGroupEntries entries) {
         entries.add(CURSED_REDSTONE);

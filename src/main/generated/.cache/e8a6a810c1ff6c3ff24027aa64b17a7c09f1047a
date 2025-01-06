@@ -1,10 +1,11 @@
-// 1.20.4	2024-12-26T11:16:48.057208159	Redstone Magic/Model Definitions
+// 1.20.4	2024-12-26T12:21:21.639093517	Redstone Magic/Model Definitions
+3bfb24672b2caa4f621c52097710756cede36898 assets/redstone-magic/models/item/quick_ring.json
 6b3b93dc9c13cfe76222e8cf684a7beb8ac9ed83 assets/redstone-magic/models/item/core_level_2.json
 f0fa2d1f1cfbfeaad9a88093cd1d992ab6524f37 assets/redstone-magic/models/item/cursed_axe.json
 ac543529c4bbaff659fe5cb86f23507d8c470981 assets/redstone-magic/models/item/sky_amulet_trinket.json
 5c142e691a2fdd0bf6c73e3140a58db4107ef3d4 assets/redstone-magic/models/item/sky_helmet_gold_trim.json
-96f10b80d8ad64b662569aae453dfa77272de003 assets/redstone-magic/models/item/sky_helmet_quartz_trim.json
 59ad1f43a3063b72c35f72ea936f40713a3b0506 assets/redstone-magic/models/item/soul_crasher.json
+96f10b80d8ad64b662569aae453dfa77272de003 assets/redstone-magic/models/item/sky_helmet_quartz_trim.json
 5c55cf163a301445117faa2810dab74188bf0b1d assets/redstone-magic/models/item/sky_leggings_quartz_trim.json
 d69b83cddfcdcb7df8e9aefff5570854119e1019 assets/redstone-magic/models/item/sky_boots_lapis_trim.json
 b0c1fedb0d1ae7f64851a240748f1f1df09764c4 assets/redstone-magic/models/item/sky_boots_amethyst_trim.json
@@ -76,9 +77,9 @@ c934f7f792de04209693dfbb5af37e9459b027a4 assets/redstone-magic/models/item/magic
 7cb84a5417b8c4aab2fd69c7dd9c87bae4b3354d assets/redstone-magic/models/item/enlightenment_shard.json
 7c3b3a7cc2bd8fb249f3c9ede2dfb82a4116c79b assets/redstone-magic/models/item/core_level_3.json
 959a6d1786bd3b16176f7881b0f25e0ca303a7a5 assets/redstone-magic/models/item/soul_reconstructor.json
-0a8d80eb407c4432d49306c41233cb4716341fa0 assets/redstone-magic/blockstates/spell_enchanter.json
-73999349f6a9bca2e0485fb57fdcf4cd1ae7b016 assets/redstone-magic/blockstates/transmutation_block.json
 e9a800a8a9b642bb434be0dd61aa0c01eeb63778 assets/redstone-magic/models/item/sky_helmet_diamond_trim.json
+73999349f6a9bca2e0485fb57fdcf4cd1ae7b016 assets/redstone-magic/blockstates/transmutation_block.json
+0a8d80eb407c4432d49306c41233cb4716341fa0 assets/redstone-magic/blockstates/spell_enchanter.json
 b9507d8e55cdf65581075e867449c28e0dbd60fb assets/redstone-magic/models/item/sky_leggings_diamond_trim.json
 9fd264011189729f782b20271ac8d1fcf7d00757 assets/redstone-magic/models/item/sky_boots_gold_trim.json
 20be3dbda0e73ee45f3974049dff87038f63adaa assets/redstone-magic/models/item/sky_reactor_block.json

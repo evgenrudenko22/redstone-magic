@@ -12,6 +12,7 @@ import net.evgenru22.item.ModItemsGroups;
 import net.evgenru22.recipe.ModRecipes;
 import net.evgenru22.screen.ModScreenHandlers;
 import net.evgenru22.util.ModCustomTrades;
+import net.evgenru22.util.ModLootTablesModifiers;
 import net.evgenru22.world.gen.ModWorldGeneration;
 import net.fabricmc.api.ModInitializer;
 
@@ -56,5 +57,7 @@ public class RedstoneMagic implements ModInitializer {
 		ServerTickEvents.START_SERVER_TICK.register(new PlayerTickHandler());
 
 		ModCustomTrades.registerCustomTrades();
+
+		ModLootTablesModifiers.modifyLootTables();
 	}
 }

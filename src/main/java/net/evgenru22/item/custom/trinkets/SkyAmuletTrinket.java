@@ -1,4 +1,4 @@
-package net.evgenru22.item.custom;
+package net.evgenru22.item.custom.trinkets;
 
 import dev.emi.trinkets.api.SlotReference;
 import dev.emi.trinkets.api.TrinketItem;
