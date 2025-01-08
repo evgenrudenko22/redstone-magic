@@ -51,6 +51,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.SKY_AMULET, Models.GENERATED);
         itemModelGenerator.register(ModItems.SKY_AMULET_TRINKET, Models.GENERATED);
         itemModelGenerator.register(ModItems.QUICK_RING, Models.GENERATED);
+        itemModelGenerator.register(ModItems.GIFT_OF_MOON, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.PERENNIAL_TORTOISE_SPAWN_EGG,
                 new Model(Optional.of(new Identifier("item/template_spawn_egg")), Optional.empty()));

@@ -1,11 +1,11 @@
-// 1.20.4	2024-12-26T12:21:21.639093517	Redstone Magic/Model Definitions
+// 1.20.4	2025-01-08T08:47:55.920767947	Redstone Magic/Model Definitions
 3bfb24672b2caa4f621c52097710756cede36898 assets/redstone-magic/models/item/quick_ring.json
 6b3b93dc9c13cfe76222e8cf684a7beb8ac9ed83 assets/redstone-magic/models/item/core_level_2.json
 f0fa2d1f1cfbfeaad9a88093cd1d992ab6524f37 assets/redstone-magic/models/item/cursed_axe.json
 ac543529c4bbaff659fe5cb86f23507d8c470981 assets/redstone-magic/models/item/sky_amulet_trinket.json
 5c142e691a2fdd0bf6c73e3140a58db4107ef3d4 assets/redstone-magic/models/item/sky_helmet_gold_trim.json
-59ad1f43a3063b72c35f72ea936f40713a3b0506 assets/redstone-magic/models/item/soul_crasher.json
 96f10b80d8ad64b662569aae453dfa77272de003 assets/redstone-magic/models/item/sky_helmet_quartz_trim.json
+59ad1f43a3063b72c35f72ea936f40713a3b0506 assets/redstone-magic/models/item/soul_crasher.json
 5c55cf163a301445117faa2810dab74188bf0b1d assets/redstone-magic/models/item/sky_leggings_quartz_trim.json
 d69b83cddfcdcb7df8e9aefff5570854119e1019 assets/redstone-magic/models/item/sky_boots_lapis_trim.json
 b0c1fedb0d1ae7f64851a240748f1f1df09764c4 assets/redstone-magic/models/item/sky_boots_amethyst_trim.json
@@ -29,8 +29,8 @@ ae90364af110779538f730b9a95b6ac72a452b7b assets/redstone-magic/models/item/sky_a
 9775841af1f59ece049d1991e3f09cc11d012f28 assets/redstone-magic/models/item/sky_chestplate_netherite_trim.json
 b158099df092a6c779b065008d2395c229f70d29 assets/redstone-magic/models/item/sky_leggings_amethyst_trim.json
 af5476446354abbaba5a2b38b4f538ea0055dafc assets/redstone-magic/models/block/reeds_crop_stage7.json
-f39e83009b4a0932ba04947d698098f988b583d5 assets/redstone-magic/models/item/sky_shard.json
 d87f45ee699dfa42a1cd2b8a4594077b781416c3 assets/redstone-magic/models/block/reeds_crop_stage1.json
+f39e83009b4a0932ba04947d698098f988b583d5 assets/redstone-magic/models/item/sky_shard.json
 b5fc5f7dab8b4a917b901b66005040153fba366d assets/redstone-magic/blockstates/ore_of_sins.json
 990a357b4944aa2d5ac12eaa0fe5cfd17b8cd5bc assets/redstone-magic/models/item/sky_helmet_iron_trim.json
 b77265c337e496be8bc41984ca600fce7e210f87 assets/redstone-magic/models/item/sky_leggings_lapis_trim.json
@@ -55,12 +55,13 @@ e54d3fb495f56fbcd96d0f2b0951a6709bdb97fa assets/redstone-magic/models/item/curse
 b1bc86227a7567496f564699cd405c320c6f453f assets/redstone-magic/models/block/sky_reactor_block.json
 f8f405ab2a0a3da0ccb80f0cddec3c8e2e38f040 assets/redstone-magic/models/block/ore_of_sins.json
 220821adbe2e064b9bb8d3484db2d4d27ac00b36 assets/redstone-magic/models/item/sky_leggings_emerald_trim.json
+af0adfc8b2f07ae23d86aad35a5c54f197a967c7 assets/redstone-magic/models/item/gift_of_moon.json
 f44362de90438394c0272c873be88507bd7c4ac9 assets/redstone-magic/models/item/sky_helmet_emerald_trim.json
 ecaad2aef1f2b6ba1c768325bf9a4f3940175dbe assets/redstone-magic/models/block/transmutation_block.json
 aee6742025f553829b6ca008108d0eb954e76b6f assets/redstone-magic/models/item/sky_chestplate_amethyst_trim.json
 ac1e66d6ea42229c73f4ffc4c47e70111683e34c assets/redstone-magic/models/item/cursed_redstone.json
-56ddd42180bd4d327e4a18c23f8f681eb7b98f82 assets/redstone-magic/models/block/reeds_crop_stage5.json
 bb1a53e0d6224da6c4c6f8a020e6c6e9a28435f0 assets/redstone-magic/models/item/sky_leggings_iron_trim.json
+56ddd42180bd4d327e4a18c23f8f681eb7b98f82 assets/redstone-magic/models/block/reeds_crop_stage5.json
 0661f54b6b03b339ea0d28fd4c37ef65e6040eda assets/redstone-magic/models/item/sins_shard.json
 e03ebdd23176aa425f758b97e7309defc73075f0 assets/redstone-magic/models/item/sky_leggings_copper_trim.json
 a3e0d200db94db45c1a56cfa8c42c248887b553b assets/redstone-magic/models/item/sky_chestplate_gold_trim.json
@@ -85,8 +86,8 @@ b9507d8e55cdf65581075e867449c28e0dbd60fb assets/redstone-magic/models/item/sky_l
 20be3dbda0e73ee45f3974049dff87038f63adaa assets/redstone-magic/models/item/sky_reactor_block.json
 e1344dd01318315eddc30a62d1bd5d3223b66d18 assets/redstone-magic/models/item/spell_enchanter.json
 f08a1f04c282da2521d981140b6c8e68eb974cf8 assets/redstone-magic/models/item/sky_leggings.json
-3f4cff31ffb4ca6d988c463ea3df0996d29ad62b assets/redstone-magic/models/item/reeds_seeds.json
 1b49dd39f3800b76774bd6ee178c9e08179f9920 assets/redstone-magic/models/block/reeds_crop_stage8.json
+3f4cff31ffb4ca6d988c463ea3df0996d29ad62b assets/redstone-magic/models/item/reeds_seeds.json
 7b11a651700e81ba3fbd86508a6d88c665eefe52 assets/redstone-magic/models/item/ore_of_sins.json
 e546e29e724f6234b10116aae1db9ebc60efcab5 assets/redstone-magic/models/item/sky_reactor_core.json
 a4cc25ecaadbe0e992a659064084291a8ceeb260 assets/redstone-magic/models/item/sky_boots.json

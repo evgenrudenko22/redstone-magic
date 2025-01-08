@@ -12,8 +12,8 @@
   "item.redstone-magic.magic_token": "Magic Token",
   "item.redstone-magic.gift_of_ancients": "Gift of Ancients",
   "item.redstone-magic.sins_shard": "Sins shard",
-  "item.redstone-magic.reeds_seeds": "Reads Seeds",
-  "item.redstone-magic.reeds_heads": "Reads Heads",
+  "item.redstone-magic.reeds_seeds": "Reeds Seeds",
+  "item.redstone-magic.reeds_heads": "Reeds Heads",
   "item.redstone-magic.sky_shard": "Sky Shard",
   "item.redstone-magic.sky_helmet": "Sky Helmet",
   "item.redstone-magic.sky_chestplate": "Sky Chestplate",
@@ -25,6 +25,7 @@
   "item.redstone-magic.sky_amulet": "Sky Amulet",
   "item.redstone-magic.sky_amulet_trinket": "Sky Amulet",
   "item.redstone-magic.quick_ring": "Quick Ring",
+  "item.redstone-magic.git_of_moon": "Gift of Moon",
 
   "block.redstone-magic.transmutation_block": "Transmutation block",
   "block.redstone-magic.pictogram_block": "Pictogram block",
@@ -38,7 +39,7 @@
   "itemGroup.redstone_magic": "Redstone Magic",
 
   "tooltip.redstone-magic.soul_crasher": "Click on Redstone block and get Cursed Redstone",
-  "tooltip.redstone-magic.pictogram_block": "Click on Pictogram block with Cursed Redstone and get Diamond",
+  "tooltip.redstone-magic.pictogram_block": "Click on Pictogram block with Cursed Redstone and get Enlightenment Shard",
 
   "entity.redstone-magic.perennial_tortoise": "Perennial Tortoise",
 

@@ -30,7 +30,7 @@ public class CursedRedstoneCategory implements DisplayCategory<CursedRedstoneDis
 
     @Override
     public Text getTitle() {
-        return Text.literal("Cursed Redstone");
+        return Text.literal("Redstone Magic");
     }
 
     @Override

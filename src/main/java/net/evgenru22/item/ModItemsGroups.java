@@ -30,6 +30,8 @@ public class ModItemsGroups {
 
                         entries.add(ModItems.SKY_AMULET);
                         entries.add(ModItems.SKY_AMULET_TRINKET);
+                        entries.add(ModItems.QUICK_RING);
+                        entries.add(ModItems.GIFT_OF_MOON);
 
                         entries.add(ModItems.SKY_HELMET);
                         entries.add(ModItems.SKY_CHESTPLATE);

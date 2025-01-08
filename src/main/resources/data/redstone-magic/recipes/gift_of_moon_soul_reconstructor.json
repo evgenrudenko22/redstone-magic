@@ -1,0 +1,18 @@
+{
+  "type": "redstone-magic:soul_reconstructor",
+  "ingredients": [
+    {
+      "item": "redstone-magic:cursed_redstone"
+    },
+    {
+      "item": "minecraft:diamond"
+    },
+    {
+      "item": "redstone-magic:sky_shard"
+    }
+  ],
+  "output": {
+    "item": "redstone-magic:gift_of_moon",
+    "count": 1
+  }
+}

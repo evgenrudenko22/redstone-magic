@@ -27,7 +27,8 @@ public class RedstoneMagicREIClientPlugin implements REIClientPlugin {
                 SpellEnchantingDisplay::new);
         registry.registerRecipeFiller(SkyReactorCoreRecipe.class, SkyReactorCoreRecipe.Type.INSTANCE,
                 SkyReactorDisplay::new);
-        registry.add(new CursedRedstoneDisplay(Blocks.OBSIDIAN, ModItems.SOUL_CRASHER, ModItems.CURSED_REDSTONE));
+        registry.add(new CursedRedstoneDisplay(Blocks.REDSTONE_BLOCK, ModItems.SOUL_CRASHER, ModItems.CURSED_REDSTONE));
+        registry.add(new CursedRedstoneDisplay(ModBlocks.PICTOGRAM_BLOCK, ModItems.CURSED_REDSTONE, ModItems.ENLIGHTENMENT_SHARD));
     }
 
     @Override

@@ -1,0 +1,51 @@
+{
+  "item.redstone-magic.cursed_redstone": "Пролятий Редстоун",
+  "item.redstone-magic.soul_crasher": "Дробач душі",
+  "item.redstone-magic.enlightenment_shard": "Осколок Просвітлення",
+  "item.redstone-magic.perennial_tortoise_spawn_egg": "Яйце Призиву Багаторічної Черепахи",
+  "item.redstone-magic.cursed_pickaxe": "Проклята Кирка",
+  "item.redstone-magic.cursed_axe": "Проклята Сокира",
+  "item.redstone-magic.cursed_shovel": "Проклята Лопата",
+  "item.redstone-magic.cursed_sword": "Проклятий Меч",
+  "item.redstone-magic.cursed_hoe": "Проклята Мотика",
+  "item.redstone-magic.cursed_staff": "Проклятий Посох",
+  "item.redstone-magic.magic_token": "Магічний Токен",
+  "item.redstone-magic.gift_of_ancients": "Дарунок Древніх",
+  "item.redstone-magic.sins_shard": "Осколки Грихів",
+  "item.redstone-magic.reeds_seeds": "Зерна Очерету",
+  "item.redstone-magic.reeds_heads": "Голівки Очерету",
+  "item.redstone-magic.sky_shard": "Небесний Осколок",
+  "item.redstone-magic.sky_helmet": "Небесний Шолом",
+  "item.redstone-magic.sky_chestplate": "Небесний Нагрудник",
+  "item.redstone-magic.sky_leggings": "Небесні Штани",
+  "item.redstone-magic.sky_boots": "Небесні Чоботи",
+  "item.redstone-magic.core_level_1": "Левел Ядра 1",
+  "item.redstone-magic.core_level_2": "Левел Ядра 2",
+  "item.redstone-magic.core_level_3": "Левел Ядра 3",
+  "item.redstone-magic.sky_amulet": "Амулет Неба",
+  "item.redstone-magic.sky_amulet_trinket": "Амулет Неба",
+  "item.redstone-magic.quick_ring": "Швидке Кільце",
+  "item.redstone-magic.git_of_moon": "Дар Місяця",
+
+  "block.redstone-magic.transmutation_block": "Трансмутаційний Блок",
+  "block.redstone-magic.pictogram_block": "Блок Піктограми",
+  "block.redstone-magic.soul_reconstructor": "Реконструктор Душі",
+  "block.redstone-magic.spell_enchanter": "Заклинатель Заклинань",
+  "block.redstone-magic.ore_of_sins": "Руда Грихів",
+  "block.redstone-magic.clean_altar": "Алтар Очищення",
+  "block.redstone-magic.sky_reactor_block": "Блок Небесного Реактора",
+  "block.redstone-magic.sky_reactor_core": "Ядро Небесного Реактора",
+
+  "itemGroup.redstone_magic": "Redstone Magic",
+
+  "tooltip.redstone-magic.soul_crasher": "Натисни на Редстоун блок і отримай Проклятий Редстоун",
+  "tooltip.redstone-magic.pictogram_block": "Натисни на блок пікторами з Проклятим редстоуном у руці і отримай Осколок Просвітлення",
+
+  "entity.redstone-magic.perennial_tortoise": "Багаторічна Черепаха",
+
+  "key.category.redstone_magic": "Redstone Magic",
+  "key.use_protection": "Використати Захист",
+
+  "effect.redstone-magic.ichor": "Іхор"
+
+}

@@ -4,6 +4,7 @@ import net.evgenru22.RedstoneMagic;
 import net.evgenru22.block.ModBlocks;
 import net.evgenru22.entity.ModEntities;
 import net.evgenru22.item.custom.*;
+import net.evgenru22.item.custom.trinkets.GiftOfMoonTrinket;
 import net.evgenru22.item.custom.trinkets.QuickRingTrinket;
 import net.evgenru22.item.custom.trinkets.SkyAmuletTrinket;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
@@ -62,6 +63,9 @@ public class ModItems {
 
     public static final Item QUICK_RING = registerItem("quick_ring",
             new QuickRingTrinket(new FabricItemSettings().maxCount(1)));
+
+    public static final Item GIFT_OF_MOON = registerItem("gift_of_moon",
+            new GiftOfMoonTrinket(new FabricItemSettings().maxCount(1)));
 
     private static void addItemsToIngredientItemGroup(FabricItemGroupEntries entries) {
         entries.add(CURSED_REDSTONE);
